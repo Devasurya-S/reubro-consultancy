@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+@media (min-width: 1400px) {
+  .px-xxl-6 {
+    padding-left: 5rem !important;
+    padding-right: 5rem !important;
+  }
+  .ps-xxl-6 {
+    padding-left: 5rem !important;
+  }
+  .pe-xxl-6 {
+    padding-right: 5rem !important;
+  }
+}
+.navLogo {
+  width: 40px;
+}
+
+.hamburger {
+  background-color: #0075FF;
+}
+.hamburger .navbar-toggler-icon {
+  background-image: none;
+}
+.hamburger .navbar-toggler-icon .hamSvg {
+  width: 18px;
+}
+.hamburger:hover {
+  background-color: #0063d8;
+}
+
+.infoSection p {
+  color: #9E9B9B;
+}
+.infoSection .infoBtn {
+  background-color: #002B3B;
+  color: white;
+  width: 150px;
+}
+.infoSection .infoBtn.infoBtnChange {
+  background-color: #038CBF;
+}
+.infoSection .infoBtn.infoBtnChange:hover {
+  background-color: #026387;
+}
+.infoSection .infoBtn:hover {
+  background-color: #006489;
+}
+
+.homeServiceContainer {
+  background-color: #002B3C;
+}
+.homeServiceContainer .homeServiceInnerContainer {
+  color: white;
+}
+
+.homeServiceTab .nav-link {
+  color: white;
+  padding-left: 10px;
+}
+.homeServiceTab .nav-link.active {
+  border-bottom: 1px solid white;
+}
+
+.homeServiceCard {
+  color: black;
+}
+
+.transitionNormal {
+  transition: all 0.3s ease-in-out;
+}/*# sourceMappingURL=style.css.map */

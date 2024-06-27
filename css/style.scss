@@ -1,0 +1,164 @@
+$hamburgerButton: #0075FF;
+$hamburgerButtonHover: #0063d8;
+$serviceContainer: #002B3C;
+$btnColor1: #002B3B;
+$btnColor1Hover: #006489;
+$btnColor2: #038CBF;
+$btnColor2Hover: #026387;
+
+$yesavaOne: "Yeseva One", serif;
+$poppins: "Poppins", sans-serif;
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $poppins;
+}
+
+// .font75 {
+//     font-size: 75px;
+//     @media (max-width: 667px) {
+//         font-size: 40px;
+//     }
+//     @media (max-width: 820px) {
+//         font-size: 45px;
+//     }
+// }
+
+// .font30 {
+//     font-size: 30px;    
+//     @media (max-width: 667px) {
+//         font-size: 20px;
+//     }
+//     @media (max-width: 820px) {
+//         font-size: 25px;
+//     }
+// }
+
+// .font35 {
+//     font-size: 35px;    
+//     @media (max-width: 667px) {
+//         font-size: 15px;
+//     }
+//     @media (max-width: 820px) {
+//         font-size: 20px;
+//     }
+// }
+
+// .font15 {
+//     font-size: 15px;    
+//     @media (max-width: 667px) {
+//         font-size: 10px;
+//     }
+//     @media (max-width: 820px) {
+//         font-size: 12px;
+//     }
+// }
+
+@media (min-width: 1400px) {
+    .px-xxl-6{
+        padding-left: 5rem !important;
+        padding-right: 5rem !important;
+    }
+    .ps-xxl-6{
+        padding-left: 5rem !important;
+    }
+    .pe-xxl-6{
+        padding-right: 5rem !important;
+    }
+}
+
+.navLogo {
+    width: 40px;
+}
+
+.hamburger{
+    background-color: $hamburgerButton;
+    .navbar-toggler-icon {
+        background-image: none;
+        .hamSvg {
+            width: 18px;
+        }
+    }
+    &:hover {
+        background-color: $hamburgerButtonHover;  
+    }
+}
+
+.infoSection {
+    p {
+        color: #9E9B9B;
+    }
+    .infoBtn {
+        background-color: $btnColor1;
+        color: white;
+        width: 150px;
+        &.infoBtnChange {
+            background-color: $btnColor2;
+            &:hover {
+                background-color: $btnColor2Hover;
+            }   
+        }
+        &:hover {
+            background-color: $btnColor1Hover;
+        }
+    }
+
+}
+
+.homeServiceContainer {
+    background-color: $serviceContainer;
+    .homeServiceInnerContainer{
+        color: white;
+    }
+}
+
+.homeServiceTab {
+    .nav-link {
+        color: white;
+        padding-left: 10px;
+        &.active {
+            border-bottom: 1px solid white;
+        }
+    }
+}
+
+.homeServiceCard{
+    color: black;
+}
+
+.transitionNormal {
+    transition: all 0.3s ease-in-out;
+}
+
+
+// .heroSection {
+//     background-repeat: no-repeat;  
+//     background-position: center;
+//     background-size: cover;
+//     height: 500px;
+//     max-height: 100vh; 
+//     @media (min-width: 992px) {
+//         background-image: url('../images/heroBackground.png');
+//     }
+//     @media (min-width: 1200px) {
+//         height: 100vh;
+//     }
+//     @media (max-width: 991px) {
+//         background-image: url('../images/temp.svg'); 
+//     }
+// }
+
+// .heroContainer {
+//     .heroText {
+//         font-family: $yesavaOne;
+//         width: 520px;
+//         bottom: 0;
+//         left: 110px;
+//         @media (max-width: 667px) {
+//             width: 100%;
+//             left: 0;
+//         }
+//     }
+// }
+
