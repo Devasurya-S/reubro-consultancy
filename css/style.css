@@ -6,14 +6,14 @@ body {
 
 @media (min-width: 1400px) {
   .px-xxl-6 {
-    padding-left: 5rem !important;
-    padding-right: 5rem !important;
+    padding-left: 10rem !important;
+    padding-right: 10rem !important;
   }
   .ps-xxl-6 {
-    padding-left: 5rem !important;
+    padding-left: 10rem !important;
   }
   .pe-xxl-6 {
-    padding-right: 5rem !important;
+    padding-right: 10rem !important;
   }
 }
 .navLogo {
@@ -60,7 +60,6 @@ body {
 
 .homeServiceTab .nav-link {
   color: white;
-  padding-left: 10px;
 }
 .homeServiceTab .nav-link.active {
   border-bottom: 1px solid white;
@@ -68,6 +67,30 @@ body {
 
 .homeServiceCard {
   color: black;
+}
+
+.homeServiceBtn a {
+  color: white;
+  border: 1px solid white;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+.homeServiceBtn a:hover {
+  color: #002B3C;
+  border: 1px solid white;
+  background-color: white;
+}
+.homeServiceBtn hr {
+  height: 2px;
+  border: none;
+  background-color: white;
+}
+
+.homeCaseBody h4, .homeCaseBody p {
+  min-height: 95px;
+}
+.homeCaseBody p {
+  color: #686868;
 }
 
 .transitionNormal {

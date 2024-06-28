@@ -57,14 +57,14 @@ body {
 
 @media (min-width: 1400px) {
     .px-xxl-6{
-        padding-left: 5rem !important;
-        padding-right: 5rem !important;
+        padding-left: 10rem !important;
+        padding-right: 10rem !important;
     }
     .ps-xxl-6{
-        padding-left: 5rem !important;
+        padding-left: 10rem !important;
     }
     .pe-xxl-6{
-        padding-right: 5rem !important;
+        padding-right: 10rem !important;
     }
 }
 
@@ -116,15 +116,44 @@ body {
 .homeServiceTab {
     .nav-link {
         color: white;
-        padding-left: 10px;
         &.active {
             border-bottom: 1px solid white;
         }
     }
 }
 
-.homeServiceCard{
+.homeServiceCard {
     color: black;
+}
+
+.homeServiceBtn {
+    a {
+        color: white;
+        border: 1px solid white;
+        min-width: fit-content;
+        &:hover {
+            color: $serviceContainer;
+            border: 1px solid white;
+            background-color: white;
+        }
+    }
+
+    hr {
+        height: 2px;
+        border: none;
+        background-color: white ;
+    }
+    
+}
+
+.homeCaseBody {
+    h4, p {
+        min-height: 95px;
+    }
+
+    p {
+        color: #686868;
+    }
 }
 
 .transitionNormal {
