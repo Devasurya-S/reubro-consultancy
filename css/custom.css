@@ -1,0 +1,328 @@
+.offcanvas {
+  background-color: #038CBF;
+  height: 100vh;
+}
+.offcanvas .closeBtn {
+  z-index: 999;
+}
+.offcanvas .navbar-brand {
+  max-width: 40%;
+  position: relative;
+}
+.offcanvas .navbar-brand img {
+  max-width: 65%;
+}
+@media (min-width: 1499px) {
+  .offcanvas .navbar-brand img {
+    max-width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .offcanvas .navbar-brand {
+    max-width: 60px;
+  }
+}
+.offcanvas .menu-wrap {
+  max-width: 40%;
+}
+.offcanvas .menu-wrap .navbar-nav .nav-link {
+  font-family: "Yeseva One", serif;
+  font-size: 2rem;
+  line-height: 1;
+  color: #ffffff;
+  opacity: 0.75;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.offcanvas .menu-wrap .navbar-nav .nav-link.active, .offcanvas .menu-wrap .navbar-nav .nav-link:hover {
+  opacity: 1;
+}
+@media (max-width: 1499px) {
+  .offcanvas .menu-wrap .navbar-nav .nav-link {
+    font-size: 1.2rem;
+  }
+}
+.offcanvas .menu-wrap .socila-links a {
+  color: #ffffff;
+}
+.offcanvas .menu-wrap .socila-links a:hover {
+  opacity: 0.75;
+}
+@media (max-width: 767px) {
+  .offcanvas .menu-wrap {
+    max-width: 100%;
+    width: 100%;
+  }
+  .offcanvas .menu-wrap .navbar-nav {
+    min-width: 50%;
+  }
+}
+.offcanvas .offcanvas-body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+}
+.offcanvas .offcanvas-body::before {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.25);
+  position: absolute;
+  width: 46vmax;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  left: -40%;
+  top: -50%;
+  animation: circleAnimBig infinite 20s linear;
+  -webkit-animation: circleAnimBig infinite 20s linear;
+}
+@media (max-width: 1499px) {
+  .offcanvas .offcanvas-body::before {
+    width: 40vmax;
+  }
+}
+.offcanvas .offcanvas-body::after {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.25);
+  position: absolute;
+  width: 26vmax;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  right: -35%;
+  bottom: 15%;
+  animation: circleAnimSmall infinite 20s linear;
+  -webkit-animation: circleAnimSmall infinite 20s linear;
+}
+@media (max-width: 1499px) {
+  .offcanvas .offcanvas-body::after {
+    width: 20vmax;
+  }
+}
+.offcanvas .offcanvas-body .menu-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 3;
+}
+@media (max-width: 767px) {
+  .offcanvas .offcanvas-body .menu-container {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
+.link-type1 {
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.link-type1:hover {
+  opacity: 0.75;
+}
+
+.banner-section {
+  background-color: #E5E5E5;
+}
+@media (max-width: 1499px) {
+  .banner-section .display-3 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 767px) {
+  .banner-section .display-3 {
+    font-size: 1.5rem;
+  }
+}
+
+.bannerbg {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .bannerbg {
+    display: none;
+  }
+}
+
+.bannerLogo {
+  position: relative;
+  z-index: 1;
+}
+.bannerLogo img {
+  max-width: 100%;
+}
+@media (max-width: 1499px) {
+  .bannerLogo {
+    max-width: 170px;
+  }
+}
+
+.maintitlewrap {
+  width: 53%;
+  position: relative;
+}
+@media (max-width: 991px) {
+  .maintitlewrap {
+    width: 85%;
+  }
+}
+@media (max-width: 767px) {
+  .maintitlewrap {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+}
+.maintitlewrap h1 {
+  font-family: "Yeseva One", serif;
+  line-height: 1;
+  position: relative;
+  z-index: 1;
+}
+@media (max-width: 767px) {
+  .maintitlewrap h1 span {
+    font-size: 15px !important;
+  }
+}
+.maintitlewrap::before {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.25);
+  position: absolute;
+  width: 46vmax;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  left: -40%;
+  top: -50%;
+  animation: circleAnimBig infinite 10s linear;
+  -webkit-animation: circleAnimBig infinite 10s linear;
+}
+@media (max-width: 1499px) {
+  .maintitlewrap::before {
+    width: 40vmax;
+  }
+}
+.maintitlewrap::after {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.25);
+  position: absolute;
+  width: 26vmax;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  right: -35%;
+  bottom: 15%;
+  animation: circleAnimSmall infinite 10s linear;
+  -webkit-animation: circleAnimSmall infinite 10s linear;
+}
+@media (max-width: 1499px) {
+  .maintitlewrap::after {
+    width: 20vmax;
+  }
+}
+
+@keyframes circleAnimBig {
+  0% {
+    left: -40%;
+    top: -50%;
+    width: 46vmax;
+  }
+  20% {
+    width: 30vmax;
+  }
+  25% {
+    left: 40%;
+    top: -50%;
+  }
+  40% {
+    width: 35vmax;
+  }
+  50% {
+    left: 40%;
+    top: -50%;
+  }
+  60% {
+    width: 45vmax;
+  }
+  75% {
+    left: -40%;
+    top: 50%;
+  }
+  80% {
+    width: 30vmax;
+  }
+  100% {
+    left: -40%;
+    top: -50%;
+    width: 46vmax;
+  }
+}
+@keyframes circleAnimSmall {
+  0% {
+    right: -35%;
+    bottom: 15%;
+    width: 26vmax;
+  }
+  20% {
+    width: 30vmax;
+  }
+  25% {
+    right: 40%;
+    bottom: -50%;
+  }
+  40% {
+    width: 35vmax;
+  }
+  50% {
+    right: 40%;
+    bottom: 50%;
+  }
+  60% {
+    width: 45vmax;
+  }
+  75% {
+    right: -40%;
+    bottom: 50%;
+  }
+  80% {
+    width: 30vmax;
+  }
+  100% {
+    right: -35%;
+    bottom: 15%;
+    width: 26vmax;
+  }
+}
+footer {
+  background-color: #038CBF;
+}
+@media (max-width: 767px) {
+  footer .footerLogo {
+    max-width: 60px;
+  }
+}
+footer .nav-link:hover {
+  text-decoration: none !important;
+}/*# sourceMappingURL=custom.css.map */

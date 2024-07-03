@@ -5,6 +5,7 @@ $btnColor1: #002B3B;
 $btnColor1Hover: #006489;
 $btnColor2: #038CBF;
 $btnColor2Hover: #026387;
+$homeNews: #F1F1F1;
 
 $yesavaOne: "Yeseva One", serif;
 $poppins: "Poppins", sans-serif;
@@ -14,46 +15,6 @@ body {
     padding: 0;
     font-family: $poppins;
 }
-
-// .font75 {
-//     font-size: 75px;
-//     @media (max-width: 667px) {
-//         font-size: 40px;
-//     }
-//     @media (max-width: 820px) {
-//         font-size: 45px;
-//     }
-// }
-
-// .font30 {
-//     font-size: 30px;    
-//     @media (max-width: 667px) {
-//         font-size: 20px;
-//     }
-//     @media (max-width: 820px) {
-//         font-size: 25px;
-//     }
-// }
-
-// .font35 {
-//     font-size: 35px;    
-//     @media (max-width: 667px) {
-//         font-size: 15px;
-//     }
-//     @media (max-width: 820px) {
-//         font-size: 20px;
-//     }
-// }
-
-// .font15 {
-//     font-size: 15px;    
-//     @media (max-width: 667px) {
-//         font-size: 10px;
-//     }
-//     @media (max-width: 820px) {
-//         font-size: 12px;
-//     }
-// }
 
 @media (min-width: 1400px) {
     .px-xxl-6{
@@ -72,8 +33,34 @@ body {
     width: 40px;
 }
 
+header{
+    .navbar-brand{
+        svg{
+            width: auto;
+            height: 0px;
+            transition: 0.5s;
+            -webkit-transition: 0.5s;
+            -moz-transition: 0.5s;
+            -ms-transition: 0.5s;
+            -o-transition: 0.5s;
+}
+    }
+}
+
+.sticky-header{
+    header{
+        background-color: $btnColor2;
+        .navbar-brand{
+            svg{
+                width: auto;
+                height: 40px;
+            }
+        }
+    }
+}
+
 .hamburger{
-    background-color: $hamburgerButton;
+    background-color: $btnColor2;
     .navbar-toggler-icon {
         background-image: none;
         .hamSvg {
@@ -146,48 +133,267 @@ body {
     
 }
 
+.square{
+    aspect-ratio: 1/1;
+}
+
+.homeCaseCard {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
 .homeCaseBody {
     h4, p {
-        min-height: 95px;
+        @media (min-width: 668px) {
+            min-height: 95px;
+        }
     }
 
     p {
         color: #686868;
     }
+
+    .caseBodyCompany {
+        width: 60px;
+        .caseBodyLogo {
+            min-width: 100%;
+            min-height: 100%;
+            object-fit: cover;
+            object-position: center;
+            width: fit-content;
+            z-index: 1;
+        }
+        .caseBodyLogoText{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 0;
+            &.nameA{
+                background-color: #002B3B;
+            }
+            &.nameB{
+                background-color: #DA8181;
+            }
+            &.nameC{
+                background-color: #39A09A;
+            }
+        }
+    }
+
+    a {
+        border: 1px solid black;
+        color: #001831;
+        &:hover {
+            border: 1px solid #001831;
+            background-color: #001831;
+            color: white;
+        }
+    }
+}
+
+.homeAbout {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    &::after{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(1, 26, 35, 0.7);
+        z-index: -1;
+    }
+    .learnMoreBtn{
+        background-color: #0075FF;
+        max-width: fit-content;
+        &:hover{
+            background-color: #1a83ff;
+        }
+    }
+}
+
+.homeExpertCard {
+    .homeExpertCardHead {
+        overflow: hidden;
+        position: relative;
+        img {
+            object-fit: cover;
+            object-position: center;
+            min-height: 100%;
+            z-index: 1;
+        }
+        .homeExpertIcon {
+            z-index: 2;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            a {
+                background-color: $btnColor2;
+                img {
+                    max-width: 40px;
+                    max-height: 40px;
+                }
+                &:hover {
+                    background-color: $btnColor2Hover;
+                }
+            }
+        }
+    }
+}
+
+.homeContactSection {
+    background-image: url('../images/leedsBackground.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .leedHolder{
+        color: white;
+        background-color: #038CBF;
+        width: fit-content;
+
+        a {
+            color: white;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+
+            &:hover svg {
+                transform: translateX(10px);
+            }   
+        }
+    }
+}
+
+.borderBottom {
+    border-bottom: 1px solid black;
+}
+
+.homeNews {
+    background-color: $homeNews;
+    .resourceLink {
+        text-decoration: none;
+        color: #000000;
+        border: 1px solid black;
+        width: fit-content;
+        min-width: 210px;
+        @media (max-width: 768px) {
+        }
+        &:hover{ 
+            background-color: black;
+            color: white;
+            svg {
+                transform: translateX(10px);
+                path {
+                    fill: white;
+                }
+            } 
+        }
+    }
+
+    .homeBlogImage {
+        aspect-ratio: 542/313;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    hr {
+        border: 1px solid #000000;
+        opacity: 0.6;
+    }
+
+    .linkControl {
+        a {
+            color: #000000;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        .homePlayButton {
+            text-decoration: none;
+            span {
+                background-color: #0063d8;
+                min-width: 65px;
+                display: flex;
+                aspect-ratio: 1/1;
+                align-items: center;
+                justify-content: center;
+                width: auto;
+                color: white;
+                svg {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+            &:hover {
+                color: #0063d8;
+
+                span {
+                    i {
+                        transform: scale(1.2);
+                        -webkit-transform: scale(1.2);
+                        -moz-transform: scale(1.2);
+                        -ms-transform: scale(1.2);
+                        -o-transform: scale(1.2);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.homeSubmit {
+    background-color: #038CBF;
+    color: white;
+
+    &:hover {
+        background-color: $btnColor1;
+        color: white;
+
+        svg {
+            path {
+                fill: $btnColor1;
+            }
+            transform: translateX(10px);
+            -webkit-transform: translateX(10px);
+            -moz-transform: translateX(10px);
+            -ms-transform: translateX(10px);
+            -o-transform: translateX(10px);
+        }
+    }
+}
+
+.contactImg{
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+}
+
+.readyToSpeak {
+    div p span {
+        color: #038CBF;
+    }
+}
+
+.callUsBtn {
+    border: 1px solid #038CBF;
+    color: #038CBF;
+    &:hover{
+        background-color: #038CBF;
+        color: white;
+    }
 }
 
 .transitionNormal {
-    transition: all 0.3s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
 }
-
-
-// .heroSection {
-//     background-repeat: no-repeat;  
-//     background-position: center;
-//     background-size: cover;
-//     height: 500px;
-//     max-height: 100vh; 
-//     @media (min-width: 992px) {
-//         background-image: url('../images/heroBackground.png');
-//     }
-//     @media (min-width: 1200px) {
-//         height: 100vh;
-//     }
-//     @media (max-width: 991px) {
-//         background-image: url('../images/temp.svg'); 
-//     }
-// }
-
-// .heroContainer {
-//     .heroText {
-//         font-family: $yesavaOne;
-//         width: 520px;
-//         bottom: 0;
-//         left: 110px;
-//         @media (max-width: 667px) {
-//             width: 100%;
-//             left: 0;
-//         }
-//     }
-// }
-

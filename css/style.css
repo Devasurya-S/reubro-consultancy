@@ -20,8 +20,26 @@ body {
   width: 40px;
 }
 
+header .navbar-brand svg {
+  width: auto;
+  height: 0px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.sticky-header header {
+  background-color: #038CBF;
+}
+.sticky-header header .navbar-brand svg {
+  width: auto;
+  height: 40px;
+}
+
 .hamburger {
-  background-color: #0075FF;
+  background-color: #038CBF;
 }
 .hamburger .navbar-toggler-icon {
   background-image: none;
@@ -86,13 +104,253 @@ body {
   background-color: white;
 }
 
-.homeCaseBody h4, .homeCaseBody p {
-  min-height: 95px;
+.square {
+  aspect-ratio: 1/1;
+}
+
+.homeCaseCard {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+@media (min-width: 668px) {
+  .homeCaseBody h4, .homeCaseBody p {
+    min-height: 95px;
+  }
 }
 .homeCaseBody p {
   color: #686868;
 }
+.homeCaseBody .caseBodyCompany {
+  width: 60px;
+}
+.homeCaseBody .caseBodyCompany .caseBodyLogo {
+  min-width: 100%;
+  min-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  z-index: 1;
+}
+.homeCaseBody .caseBodyCompany .caseBodyLogoText {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+}
+.homeCaseBody .caseBodyCompany .caseBodyLogoText.nameA {
+  background-color: #002B3B;
+}
+.homeCaseBody .caseBodyCompany .caseBodyLogoText.nameB {
+  background-color: #DA8181;
+}
+.homeCaseBody .caseBodyCompany .caseBodyLogoText.nameC {
+  background-color: #39A09A;
+}
+.homeCaseBody a {
+  border: 1px solid black;
+  color: #001831;
+}
+.homeCaseBody a:hover {
+  border: 1px solid #001831;
+  background-color: #001831;
+  color: white;
+}
+
+.homeAbout {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+.homeAbout::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(1, 26, 35, 0.7);
+  z-index: -1;
+}
+.homeAbout .learnMoreBtn {
+  background-color: #0075FF;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+.homeAbout .learnMoreBtn:hover {
+  background-color: #1a83ff;
+}
+
+.homeExpertCard .homeExpertCardHead {
+  overflow: hidden;
+  position: relative;
+}
+.homeExpertCard .homeExpertCardHead img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  min-height: 100%;
+  z-index: 1;
+}
+.homeExpertCard .homeExpertCardHead .homeExpertIcon {
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.homeExpertCard .homeExpertCardHead .homeExpertIcon a {
+  background-color: #038CBF;
+}
+.homeExpertCard .homeExpertCardHead .homeExpertIcon a img {
+  max-width: 40px;
+  max-height: 40px;
+}
+.homeExpertCard .homeExpertCardHead .homeExpertIcon a:hover {
+  background-color: #026387;
+}
+
+.homeContactSection {
+  background-image: url("../images/leedsBackground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.homeContactSection .leedHolder {
+  color: white;
+  background-color: #038CBF;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.homeContactSection .leedHolder a {
+  color: white;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+.homeContactSection .leedHolder a:hover svg {
+  transform: translateX(10px);
+}
+
+.borderBottom {
+  border-bottom: 1px solid black;
+}
+
+.homeNews {
+  background-color: #F1F1F1;
+}
+.homeNews .resourceLink {
+  text-decoration: none;
+  color: #000000;
+  border: 1px solid black;
+  width: -moz-fit-content;
+  width: fit-content;
+  min-width: 210px;
+}
+.homeNews .resourceLink:hover {
+  background-color: black;
+  color: white;
+}
+.homeNews .resourceLink:hover svg {
+  transform: translateX(10px);
+}
+.homeNews .resourceLink:hover svg path {
+  fill: white;
+}
+.homeNews .homeBlogImage {
+  aspect-ratio: 542/313;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+.homeNews hr {
+  border: 1px solid #000000;
+  opacity: 0.6;
+}
+.homeNews .linkControl a {
+  color: #000000;
+}
+.homeNews .linkControl a:hover {
+  text-decoration: none;
+}
+.homeNews .linkControl .homePlayButton {
+  text-decoration: none;
+}
+.homeNews .linkControl .homePlayButton span {
+  background-color: #0063d8;
+  min-width: 65px;
+  display: flex;
+  aspect-ratio: 1/1;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  color: white;
+}
+.homeNews .linkControl .homePlayButton span svg {
+  width: 30px;
+  height: 30px;
+}
+.homeNews .linkControl .homePlayButton:hover {
+  color: #0063d8;
+}
+.homeNews .linkControl .homePlayButton:hover span i {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+
+.homeSubmit {
+  background-color: #038CBF;
+  color: white;
+}
+.homeSubmit:hover {
+  background-color: #002B3B;
+  color: white;
+}
+.homeSubmit:hover svg {
+  transform: translateX(10px);
+  -webkit-transform: translateX(10px);
+  -moz-transform: translateX(10px);
+  -ms-transform: translateX(10px);
+  -o-transform: translateX(10px);
+}
+.homeSubmit:hover svg path {
+  fill: #002B3B;
+}
+
+.contactImg {
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+}
+
+.readyToSpeak div p span {
+  color: #038CBF;
+}
+
+.callUsBtn {
+  border: 1px solid #038CBF;
+  color: #038CBF;
+}
+.callUsBtn:hover {
+  background-color: #038CBF;
+  color: white;
+}
 
 .transitionNormal {
-  transition: all 0.3s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
 }/*# sourceMappingURL=style.css.map */
