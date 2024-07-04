@@ -384,6 +384,7 @@ header .navbar-brand svg {
 .serviceGrid .serviceCard {
   border-top: 4px solid #019EDA;
   background-color: #ffffff;
+  height: 100%;
 }
 .serviceGrid .serviceCard .serviceIcon {
   height: 60px;
