@@ -353,4 +353,85 @@ header .navbar-brand svg {
   -moz-transition: all 0.4s ease-in-out;
   -ms-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
+}
+
+.ourServiceBanner {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.ourServiceBanner .serviceBannerText {
+  min-height: 500px;
+}
+.ourServiceBanner .serviceBannerText h3 {
+  font-family: "Yeseva One", serif;
+}
+
+.overviewSection {
+  background-color: #002B3B;
+}
+.overviewSection .overviewImage {
+  background-image: url("../images/serviceOverview.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 500px;
+}
+
+.serviceGrid {
+  background-color: #EBF0F3;
+}
+.serviceGrid .serviceCard {
+  border-top: 4px solid #019EDA;
+  background-color: #ffffff;
+}
+.serviceGrid .serviceCard .serviceIcon {
+  height: 60px;
+  width: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.serviceGrid .serviceCard h4 {
+  min-height: 60px;
+}
+.serviceGrid .serviceCard p {
+  min-height: 70px;
+}
+.serviceGrid .serviceCard a {
+  text-decoration: none;
+  color: #00719C;
+}
+.serviceGrid .serviceCard a:hover {
+  color: #00121a;
+}
+
+.moreInfoSection {
+  background-color: #0F2032;
+}
+.moreInfoSection h3 {
+  font-family: "Yeseva One", serif;
+}
+.moreInfoSection .moreBtnContainer a {
+  background-color: #038CBF;
+  color: white;
+}
+.moreInfoSection .moreBtnContainer a:hover {
+  background-color: white;
+  color: #038CBF;
+}
+.moreInfoSection .moreInfoBg {
+  background-image: url("../images/moreInformationBackground.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+}
+
+.serviceSubBtn {
+  background-color: #038CBF;
+  color: white;
+}
+.serviceSubBtn:hover {
+  background-color: #025c7e;
+  color: white;
 }/*# sourceMappingURL=style.css.map */

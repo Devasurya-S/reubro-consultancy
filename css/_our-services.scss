@@ -1,0 +1,87 @@
+.ourServiceBanner {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    .serviceBannerText{
+        min-height: 500px;
+        h3 {
+            font-family: $yesavaOne;
+        }
+    }
+}
+
+.overviewSection {
+    background-color: #002B3B;
+    .overviewImage {
+        background-image: url('../images/serviceOverview.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        min-height: 500px;
+    }
+}
+
+.serviceGrid{
+    background-color: #EBF0F3;
+    .serviceCard {
+        border-top: 4px solid #019EDA;
+        background-color: #ffffff;
+
+        .serviceIcon {
+            height: 60px;
+            width: auto;
+            object-fit: cover;
+        }
+
+        h4 {
+            min-height: 60px;
+        }
+
+        p {
+            min-height: 70px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #00719C;
+            &:hover {
+                color: #00121a;
+            }
+        }
+    }
+}
+
+.moreInfoSection {
+    background-color: #0F2032;
+    h3 {
+        font-family: $yesavaOne;
+    }
+    .moreBtnContainer { 
+        a {
+            background-color: #038CBF;
+            color: white;
+            &:hover {
+                background-color: white;
+                color: #038CBF;
+            }
+        }
+    }
+
+    .moreInfoBg {
+        background-image: url('../images/moreInformationBackground.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 400px;
+    }
+
+}
+
+.serviceSubBtn{
+    background-color: #038CBF;
+    color: white;
+    &:hover {
+        background-color: #025c7e;
+        color: white;
+    }
+}
