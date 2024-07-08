@@ -17,14 +17,16 @@ body {
 }
 
 @media (min-width: 1400px) {
-    .px-xxl-6{
+    .px-xxl-6 {
         padding-left: 10rem !important;
         padding-right: 10rem !important;
     }
-    .ps-xxl-6{
+
+    .ps-xxl-6 {
         padding-left: 10rem !important;
     }
-    .pe-xxl-6{
+
+    .pe-xxl-6 {
         padding-right: 10rem !important;
     }
 }
@@ -33,42 +35,72 @@ body {
     width: 40px;
 }
 
-header{
-    .navbar-brand{
-        svg{
+header {
+    .navbar-brand {
+        svg {
             width: auto;
-            height: 0px;
+            height: 50px;
             transition: 0.5s;
             -webkit-transition: 0.5s;
             -moz-transition: 0.5s;
             -ms-transition: 0.5s;
             -o-transition: 0.5s;
-}
+        }
     }
 }
 
-.sticky-header{
-    header{
-        background-color: $btnColor2;
-        .navbar-brand{
-            svg{
+header {
+    &.homepage {
+        .navbar-brand {
+            svg {
                 width: auto;
-                height: 40px;
+                height: 0;
             }
         }
     }
 }
-
-.hamburger{
+.sticky-header {
+    header { 
+        background-color: $btnColor2;
+        .navbar-brand {
+            svg {
+                width: auto;
+                height: 40px;
+            }
+        }
+        animation: headerBg 0.3s 1 ease-in;
+        -webkit-animation: headerBg 0.3s 1 ease-in;
+}
+}
+@keyframes headerBg {
+    from{
+        background-color: rgba(3, 140, 191, 0);
+    }
+    to{
+        background-color: rgba(3, 140, 191, 1);
+    }
+}
+@keyframes headerBgRev {
+    from{
+        background-color: rgba(3, 140, 191, 1);
+    }
+    to{
+        background-color: rgba(3, 140, 191, 0);
+    }
+}
+.hamburger {
     background-color: $btnColor2;
+
     .navbar-toggler-icon {
         background-image: none;
+
         .hamSvg {
             width: 18px;
         }
     }
+
     &:hover {
-        background-color: $hamburgerButtonHover;  
+        background-color: $hamburgerButtonHover;
     }
 }
 
@@ -76,26 +108,57 @@ header{
     p {
         color: #9E9B9B;
     }
+
     .infoBtn {
         background-color: $btnColor1;
         color: white;
         width: 150px;
+
         &.infoBtnChange {
             background-color: $btnColor2;
+
             &:hover {
                 background-color: $btnColor2Hover;
-            }   
+            }
         }
+
         &:hover {
             background-color: $btnColor1Hover;
         }
     }
 
 }
+.exploreAllBtn{
+    color: white;
+    text-decoration: none;
+    width: fit-content;
+    .fa-arrow-right {
+        margin-left: 10px;
+    }
 
+    &:hover {
+        color: $btnColor2   ;
+        .fa-arrow-right {
+            margin-left: 15px;
+}
+    }
+}
+
+.homeServicePill {
+    a {
+        text-decoration: none;
+        color: white;
+        border: 1px solid white;
+        &:hover {
+            background-color: $btnColor2;
+            border-color: $btnColor2;
+        }
+    }
+}
 .homeServiceContainer {
     background-color: $serviceContainer;
-    .homeServiceInnerContainer{
+
+    .homeServiceInnerContainer {
         color: white;
     }
 }
@@ -103,6 +166,7 @@ header{
 .homeServiceTab {
     .nav-link {
         color: white;
+
         &.active {
             border-bottom: 1px solid white;
         }
@@ -111,6 +175,15 @@ header{
 
 .homeServiceCard {
     color: black;
+    .homeServiceIcon{
+        height: 56px;
+    }
+
+    p {
+        @media (min-width: 992px) {
+            min-height: 90px;
+        }
+    }
 }
 
 .homeServiceBtn {
@@ -118,6 +191,7 @@ header{
         color: white;
         border: 1px solid white;
         min-width: fit-content;
+
         &:hover {
             color: $serviceContainer;
             border: 1px solid white;
@@ -128,12 +202,12 @@ header{
     hr {
         height: 2px;
         border: none;
-        background-color: white ;
+        background-color: white;
     }
-    
+
 }
 
-.square{
+.square {
     aspect-ratio: 1/1;
 }
 
@@ -142,7 +216,9 @@ header{
 }
 
 .homeCaseBody {
-    h4, p {
+
+    h4,
+    p {
         @media (min-width: 668px) {
             min-height: 95px;
         }
@@ -154,6 +230,7 @@ header{
 
     .caseBodyCompany {
         width: 60px;
+
         .caseBodyLogo {
             min-width: 100%;
             min-height: 100%;
@@ -162,20 +239,24 @@ header{
             width: fit-content;
             z-index: 1;
         }
-        .caseBodyLogoText{
+
+        .caseBodyLogoText {
             width: 100%;
             height: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
             z-index: 0;
-            &.nameA{
+
+            &.nameA {
                 background-color: #002B3B;
             }
-            &.nameB{
+
+            &.nameB {
                 background-color: #DA8181;
             }
-            &.nameC{
+
+            &.nameC {
                 background-color: #39A09A;
             }
         }
@@ -184,6 +265,7 @@ header{
     a {
         border: 1px solid black;
         color: #001831;
+
         &:hover {
             border: 1px solid #001831;
             background-color: #001831;
@@ -198,7 +280,8 @@ header{
     background-size: cover;
     position: relative;
     z-index: 1;
-    &::after{
+
+    &::after {
         content: "";
         display: block;
         position: absolute;
@@ -209,10 +292,12 @@ header{
         background-color: rgba(1, 26, 35, 0.7);
         z-index: -1;
     }
-    .learnMoreBtn{
+
+    .learnMoreBtn {
         background-color: #0075FF;
         max-width: fit-content;
-        &:hover{
+
+        &:hover {
             background-color: #1a83ff;
         }
     }
@@ -222,23 +307,28 @@ header{
     .homeExpertCardHead {
         overflow: hidden;
         position: relative;
+
         img {
             object-fit: cover;
             object-position: center;
             min-height: 100%;
             z-index: 1;
         }
+
         .homeExpertIcon {
             z-index: 2;
             position: absolute;
             bottom: 0;
             right: 0;
+
             a {
                 background-color: $btnColor2;
+
                 img {
                     max-width: 40px;
                     max-height: 40px;
                 }
+
                 &:hover {
                     background-color: $btnColor2Hover;
                 }
@@ -252,10 +342,14 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    .leedHolder{
+
+    .leedHolder {
         color: white;
         background-color: #038CBF;
-        width: fit-content;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
         a {
             color: white;
@@ -265,7 +359,7 @@ header{
 
             &:hover svg {
                 transform: translateX(10px);
-            }   
+            }
         }
     }
 }
@@ -276,23 +370,27 @@ header{
 
 .homeNews {
     background-color: $homeNews;
+
     .resourceLink {
         text-decoration: none;
         color: #000000;
         border: 1px solid black;
         width: fit-content;
         min-width: 210px;
-        @media (max-width: 768px) {
-        }
-        &:hover{ 
+
+        @media (max-width: 768px) {}
+
+        &:hover {
             background-color: black;
             color: white;
+
             svg {
                 transform: translateX(10px);
+
                 path {
                     fill: white;
                 }
-            } 
+            }
         }
     }
 
@@ -310,6 +408,7 @@ header{
     .linkControl {
         a {
             color: #000000;
+
             &:hover {
                 text-decoration: none;
             }
@@ -317,6 +416,7 @@ header{
 
         .homePlayButton {
             text-decoration: none;
+
             span {
                 background-color: #0063d8;
                 min-width: 65px;
@@ -326,11 +426,13 @@ header{
                 justify-content: center;
                 width: auto;
                 color: white;
+
                 svg {
                     width: 30px;
                     height: 30px;
                 }
             }
+
             &:hover {
                 color: #0063d8;
 
@@ -360,6 +462,7 @@ header{
             path {
                 fill: $btnColor1;
             }
+
             transform: translateX(10px);
             -webkit-transform: translateX(10px);
             -moz-transform: translateX(10px);
@@ -369,7 +472,7 @@ header{
     }
 }
 
-.contactImg{
+.contactImg {
     object-fit: cover;
     aspect-ratio: 1/1;
     overflow: hidden;
@@ -384,7 +487,8 @@ header{
 .callUsBtn {
     border: 1px solid #038CBF;
     color: #038CBF;
-    &:hover{
+
+    &:hover {
         background-color: #038CBF;
         color: white;
     }

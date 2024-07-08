@@ -31,7 +31,7 @@
 </head>
 
 <body id="stickyHeader">
-    <header class="position-fixed w-100 z-3">
+    <header class="position-fixed w-100 z-3 homepage">
         <!-- <nav class="navbar fixed-top"> -->
         <nav class="navbar">
             <div class="container-fluid px-xxl-6 px-xl-5">
@@ -64,25 +64,25 @@
                             <div class="menu-wrap d-flex flex-md-column flex-sm-row flex-column">
                                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                                     <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="#">Our Capabilities</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Case Studies</a>
+                                        <a class="nav-link" href="case-studies.html">Case Studies</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="#">Meet Our Expertise</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">News &amp; Insights</a>
+                                        <a class="nav-link" href="our-services.html">Explore Services</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">About</a>
+                                        <a class="nav-link" href="about-us.html">About</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Get in Touch</a>
+                                        <a class="nav-link" href="contact-us.html">Get in Touch</a>
                                     </li>
                                 </ul>
                                 <div class="other-links">
@@ -113,7 +113,35 @@
             <div class="d-flex">
                 <div class="maintitlewrap ps-xxl-6 px-xl-5 px-3 py-4 py-lg-5">
                     <div class="bannerLogo mb-3 pe-4">
-                        <img src="images/logo.png" alt="" />
+                        <!-- <img src="images/logo.png" alt="" /> -->
+                        <div class="row g-1 px-1">
+                            <div class="col-6"></div>
+                            <div class="col-6"><div class="overflow-hidden square border-end-top-circle">
+                                <video width="auto" height="100%" autoplay muted loop>
+                                    <source src="images/3251737-uhd_3840_2160_25fps.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div></div>
+                            <div class="col-6"><div class="overflow-hidden square">
+                                <video width="auto" height="100%" autoplay muted loop>
+                                    <source src="images/3253079-uhd_3840_2160_25fps.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div></div>
+                            <div class="col-6"><div class="overflow-hidden square border-end-bottom-circle">
+                                <video width="auto" height="100%" autoplay muted loop>
+                                    <source src="images/4426376-uhd_3840_2160_25fps.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div></div>
+                            <div class="col-6"></div>
+                            <div class="col-6"><div class="overflow-hidden square border-end-top-circle">
+                                <video width="auto" height="100%" autoplay muted loop>
+                                    <source src="images/3251737-uhd_3840_2160_25fps.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div></div>
+                        </div>
                     </div>
                     <h1 class="lh-1 display-3">
                         Helping your <br />
@@ -141,86 +169,66 @@
     <!-- Services Section -->
     <section class="homeServiceContainer">
         <div class="container-fluid px-xxl-6 px-xl-5 py-4 py-lg-5">
-            <div class="homeServiceInnerContainer">
-                <h3 class="fs-2 fw-medium">Explore our Capabilities</h3>
-                <ul class="nav homeServiceTab mb-3 fs-5 fw-regular" id="pills-tab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link fw-light active" id="pills-home-tab" data-bs-toggle="pill"
-                            data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
-                            aria-selected="true">Home</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
-                            data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
-                            aria-selected="false">Profile</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
-                            data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
-                            aria-selected="false">Contact</button>
-                    </li>
-                </ul>
-                <div class="tab-content" id="pills-tabContent">
-                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
-                        aria-labelledby="pills-home-tab" tabindex="0">
-                        <div class="row g-xl-5 g-lg-4 g-3">
-                            <div class="col-md-6 col-lg-4">
-                                <div class="bg-white homeServiceCard card border-0 rounded-0">
-                                    <img src="images/homeService2.png" class="w-100" alt="..." />
-                                    <div class="p-4">
-                                        <h5 class="fs-4 fw-medium">HR Solutions</h5>
-                                        <p class="fs-6 fw-light">
-                                            Our flexible, comprehensive suite of HR software and solutions support every
-                                            element of people management, including recruitment, staff development,
-                                            engagement, payroll and more.
-                                        </p>
-                                        <a href="#" class="btn btn-primary fw-light fs-6 rounded-pill">See More</a>
-                                    </div>
-                                </div>
+            <div>
+                <h3 class="fs-2 fw-medium text-white mb-5">Explore our Capabilities</h3>
+                <div class="row g-xl-5 gy-4 g-3">
+                    <div class="col-lg-4">
+                        <div class="homeServiceCard d-flex flex-column gap-3 text-white">
+                            <div class="d-flex align-items-center gap-3">
+                                <img src="/images/homeServiceIcon.svg" alt="icon for insights" class="homeServiceIcon">
+                                <h4>Insights</h4>
                             </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="bg-white homeServiceCard card border-0 rounded-0">
-                                    <img src="images/homeService3.png" class="w-100" alt="..." />
-                                    <div class="p-4">
-                                        <h5 class="fs-4 fw-medium">Business Consulting</h5>
-                                        <p class="fs-6 fw-light">
-                                            Our flexible, comprehensive suite of HR software and solutions support every
-                                            element of people management, including recruitment, staff development,
-                                            engagement, payroll and more.
-                                        </p>
-                                        <a href="#" class="btn btn-danger fw-light fs-6 rounded-pill">See More</a>
-                                    </div>
-                                </div>
+                            <p class="fs-6 mb-0">We provide a global antenna based on facts, not hype, to help improve returns on your IT and business investments.</p>
+                            <div class="d-flex flex-wrap gap-2 homeServicePill">
+                                <a class="rounded-pill transitionNormal py-2 px-3 small">Banking & financial markets</a>
+                                <a class="rounded-pill transitionNormal py-2 px-3 small">Central government</a>
+                                <a class="rounded-pill transitionNormal py-2 px-3 small">Health & care</a>
+                                <a class="rounded-pill transitionNormal py-2 px-3 small">Utilities</a>
+                                <a class="rounded-pill transitionNormal py-2 px-3 small">Defence & intelligence</a>
+                                <a class="rounded-pill transitionNormal py-2 px-3 small">Oil & Gas</a>
                             </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="bg-white homeServiceCard card border-0 rounded-0">
-                                    <img src="images/homeService1.png" class="w-100" alt="..." />
-                                    <div class="p-4">
-                                        <h5 class="fs-4 fw-medium">IT Solutions</h5>
-                                        <p class="fs-6 fw-light">
-                                            Our flexible, comprehensive suite of HR software and solutions support every
-                                            element of people management, including recruitment, staff development,
-                                            engagement, payroll and more.
-                                        </p>
-                                        <a href="#" class="btn btn-warning text-white fw-light fs-6 rounded-pill">See
-                                            More</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="d-flex align-items-center homeServiceBtn">
-                                    <hr class="w-100" />
-                                    <a href="#" class="btn rounded-pill transitionNormal">Our full service
-                                        capabilities</a>
-                                    <hr class="w-100" />
-                                </div>
-                            </div>
+                            <a href="#" class="exploreAllBtn d-flex align-items-center"><span class="transitionNormal fs-6">Explore all industries</span><i class="fa-solid fa-arrow-right transitionNormal fs-5"></i> 
+                            </a>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
-                        tabindex="0">2</div>
-                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
-                        tabindex="0">3</div>
+                    <div class="col-lg-4">
+                        <div class="homeServiceCard d-flex flex-column gap-3 text-white">
+                            <div class="d-flex align-items-center gap-3">
+                                <img src="/images/homeServiceIcon1.svg" alt="icon for services" class="homeServiceIcon">
+                                <h4 class="fs-4">Services</h4>
+                            </div>
+                            <p class="fs-6 mb-0">We help you meet the ever-evolving digital expectations of your  customers and citizens through our secure and flexible end-to-end  services.</p>
+                            <div class="d-flex flex-wrap gap-2 homeServicePill">
+                                <a class="rounded-pill transitionNormal py-2 px-3 small">Advisory services</a>
+                                <a class="rounded-pill transitionNormal py-2 px-3 small">Business consulting</a>
+                                <a class="rounded-pill transitionNormal py-2 px-3 small">Managed IT services</a>
+                                <a class="rounded-pill transitionNormal py-2 px-3 small">Agile digital services</a>
+                                <a class="rounded-pill transitionNormal py-2 px-3 small">Advanced analytics</a>
+                                <a class="rounded-pill transitionNormal py-2 px-3 small">Sustainability services</a>
+                            </div>
+                            <a href="#" class="exploreAllBtn d-flex align-items-center"><span class="transitionNormal fs-6">Explore all industries</span><i class="fa-solid fa-arrow-right transitionNormal fs-5"></i> 
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="homeServiceCard d-flex flex-column gap-3 text-white">
+                            <div class="d-flex align-items-center gap-3">
+                                <img src="/images/homeServiceIcon2.svg" alt="icon for services" class="homeServiceIcon">
+                                <h4 class="fs-4">Solutions</h4>
+                            </div>
+                            <p class="fs-6 mb-0">Our intellectual property-based solutions help you accelerate innovation and drive operational excellence.</p>
+                            <div class="d-flex flex-wrap gap-2 homeServicePill">
+                                <a class="rounded-pill transitionNormal py-2 px-3 small">HR solutions</a>
+                                <a class="rounded-pill transitionNormal py-2 px-3 small">Staffing</a>
+                                <a class="rounded-pill transitionNormal py-2 px-3 small">IT Solutions</a>
+                                <a class="rounded-pill transitionNormal py-2 px-3 small">Government Solutions</a>
+                                <a class="rounded-pill transitionNormal py-2 px-3 small">Talent Development</a>
+                                <a class="rounded-pill transitionNormal py-2 px-3 small">Environment, Health and Safety</a>
+                            </div>
+                            <a href="#" class="exploreAllBtn d-flex align-items-center"><span class="transitionNormal fs-6">Explore all industries</span><i class="fa-solid fa-arrow-right transitionNormal fs-5"></i> 
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -386,50 +394,6 @@
             </div>
         </div>
     </section>
-    <!-- News and Insights Section -->
-    <section class="homeNews">
-        <div class="container-fluid px-xxl-6 px-xl-5 py-4 py-lg-5">
-            <h3 class="fs-2">News & Insights</h3>
-            <div class="d-flex flex-lg-row gap-3 flex-column justify-content-lg-between borderBottom align-items-lg-center pb-3 mb-4">
-                <p class="fs-6 fw-regular mb-0">Showcasing our expertise and the value we bring to our clients through real-world examples that have delivered high quality outcomes.</p>
-                <a href="#" class="rounded-pill resourceLink py-2 px-4 fs-6 transitionNormal">
-                    All resources
-                    <svg class="ms-3 transitionNormal" width="30" height="8" viewBox="0 0 30 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M29.3536 4.35355C29.5488 4.15829 29.5488 3.84171 29.3536 3.64645L26.1716 0.464466C25.9763 0.269204 25.6597 0.269204 25.4645 0.464466C25.2692 0.659728 25.2692 0.976311 25.4645 1.17157L28.2929 4L25.4645 6.82843C25.2692 7.02369 25.2692 7.34027 25.4645 7.53553C25.6597 7.7308 25.9763 7.7308 26.1716 7.53553L29.3536 4.35355ZM0 4.5H29V3.5H0V4.5Z" fill="black"/>
-                    </svg> 
-                </a>
-            </div>
-            <div class="row">
-                <div class="col-lg-6">
-                    <h4 class="fw-medium fs-4">BLOG</h4>
-                    <div class="homeBlogImage my-3 mb-lg-5">
-                        <img src="./images/homeBlog.png" alt="featured blog cover image" class="w-100">
-                    </div>
-                    <h4 class="fs-4 fw-medium">The Power of Situation Appraisal: Beginnings</h4>
-                    <p class="fs-6 fw-regular">With the best of intentions, a company can easily commit to a dozen strategic initiatives. Of course, it can also launch 5 operational improvement programs simultaneously. Why wouldn’t they also add two major systems overhauls into the mix as well? Why not, indeed?</p>
-                </div>
-                <div class="col-lg-6 linkControl">
-                    <div class="mb-5">
-                        <h4 class="fs-4 fw-medium">WHITE PAPERS</h4>
-                        <hr>
-                        <a href="#">The Lurking Latent Crocodiles of IT Support</a>
-                        <hr>
-                        <a href="#">Achieving Service Excellence in Major Incident Management</a>
-                    </div>
-                    <div>
-                        <h4 class="fs-4 fw-medium">EVENTS</h4>
-                        <hr class="mb-lg-5 mb-4">
-                        <a href="#" class="homePlayButton d-flex gap-2 align-items-center">
-                            <span class="rounded-circle">
-                                <i class="bi bi-play fs-1 lh-1 transitionNormal"></i>          
-                            </span>
-                            Problems solved in 2 hours? I don’t believe it!
-                        </a>
-                    </div>   
-                </div>
-            </div>
-        </div>
-    </section>
     <!-- Get in touch section -->
     <section>
         <div class="container-fluid px-xxl-6 px-xl-5 py-4 py-lg-5">
@@ -493,20 +457,25 @@
         </div>
     </section>
     <!-- Leeds Sections -->
-    <section class="homeContactSection">
+    <section class="homeContactSection py-5">
         <div class="container-fluid px-xxl-6 px-xl-5 py-4 py-lg-5">
-            <div class="leedHolder p-4">
-                <h4 class="fs-4 fw-medium">Leeds</h4>
-                <p class="fs-6 fw-medium">
-                    Near South Over Bridge <br />
-                    Valanjambalam<br />
-                    Kochi, Ernakulam<br />
-                    Kerala 682016
-                </p>
-                <a href="#" class="fs-6 fw-medium">Get Directions 
-                    <svg class="ms-2 transitionNormal" width="38" height="16" viewBox="0 0 38 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M37.7071 8.70711C38.0976 8.31658 38.0976 7.68342 37.7071 7.29289L31.3431 0.928932C30.9526 0.538408 30.3195 0.538408 29.9289 0.928932C29.5384 1.31946 29.5384 1.95262 29.9289 2.34315L35.5858 8L29.9289 13.6569C29.5384 14.0474 29.5384 14.6805 29.9289 15.0711C30.3195 15.4616 30.9526 15.4616 31.3431 15.0711L37.7071 8.70711ZM0 9H37V7H0V9Z" fill="white"/>
-                    </svg>
+            <div class="row">
+                <div class="col-lg-4 col-md-5 col-sm-7">
+                    <div class="leedHolder p-5">
+                        <h4 class="fs-4 fw-medium mb-4">Leeds</h4>
+                        <p class="fs-6 fw-medium mb-4">
+                            Near South Over Bridge <br />
+                            Valanjambalam<br />
+                            Kochi, Ernakulam<br />
+                            Kerala 682016
+                        </p>
+                        <a href="#" class="fs-6 fw-medium">Get Directions 
+                            <svg class="ms-2 transitionNormal" width="38" height="16" viewBox="0 0 38 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M37.7071 8.70711C38.0976 8.31658 38.0976 7.68342 37.7071 7.29289L31.3431 0.928932C30.9526 0.538408 30.3195 0.538408 29.9289 0.928932C29.5384 1.31946 29.5384 1.95262 29.9289 2.34315L35.5858 8L29.9289 13.6569C29.5384 14.0474 29.5384 14.6805 29.9289 15.0711C30.3195 15.4616 30.9526 15.4616 31.3431 15.0711L37.7071 8.70711ZM0 9H37V7H0V9Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -573,6 +542,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/68bb92e1a7.js" crossorigin="anonymous"></script>
     <!-- Owl Carousel -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="

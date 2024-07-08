@@ -134,6 +134,35 @@
   opacity: 0.75;
 }
 
+.border-hover {
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+.border-hover:hover {
+  border-color: #014e69 !important;
+}
+
+.link-img-hover {
+  overflow: hidden;
+}
+.link-img-hover img {
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+.link-img-hover:hover img {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
+
 .banner-section {
   background-color: #E5E5E5;
 }
@@ -163,13 +192,30 @@
 .bannerLogo {
   position: relative;
   z-index: 1;
+  max-width: 20vw;
 }
 .bannerLogo img {
   max-width: 100%;
 }
-@media (max-width: 1499px) {
+.bannerLogo video {
+  aspect-ratio: 1/1;
+  min-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 1199px) {
   .bannerLogo {
-    max-width: 170px;
+    max-width: 25vw;
+  }
+}
+@media (max-width: 767px) {
+  .bannerLogo {
+    max-width: 30vw;
+  }
+}
+@media (max-width: 574px) {
+  .bannerLogo {
+    max-width: 45vw;
   }
 }
 
@@ -323,6 +369,114 @@ footer {
     max-width: 60px;
   }
 }
-footer .nav-link:hover {
-  text-decoration: none !important;
+
+/*********************Video Start*************************/
+.border-end-top-circle {
+  border-top-right-radius: 100%;
+}
+
+.border-end-bottom-circle {
+  border-bottom-right-radius: 100%;
+}
+
+/**********************Video End**************************/
+.hd-type1 {
+  font-family: "Yeseva One", serif;
+}
+
+.innerBannerSection::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.25);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.banner-textwrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  color: #ffffff;
+  z-index: 2;
+}
+.banner-textwrap h2 {
+  font-family: "Yeseva One", serif;
+}
+
+.btn-type1 {
+  background-color: #038CBF;
+  color: #ffffff;
+}
+.btn-type1:hover {
+  background-color: #014e69;
+  color: #ffffff;
+}
+
+.team-tab-btn {
+  display: flex;
+  justify-content: space-between;
+}
+.team-tab-btn:hover, .team-tab-btn.active {
+  color: #038CBF;
+}
+@media (max-width: 991px) {
+  .team-tab-btn {
+    background-color: #038CBF;
+    color: #ffffff;
+  }
+  .team-tab-btn:hover, .team-tab-btn.active {
+    background-color: #026387;
+    color: #ffffff;
+  }
+}
+@media (max-width: 767px) {
+  .team-tab-btn {
+    font-size: 14px;
+  }
+}
+
+.r4x5 {
+  aspect-ratio: 4/5;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.team-info .socila-links {
+  width: 40px;
+  background-color: #038CBF;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  line-height: 1;
+  display: flex;
+}
+.team-info .socila-links:hover {
+  background-color: #026387;
+}
+
+.sticky-btn-wrp {
+  position: sticky;
+  top: 75px;
+  z-index: 1;
+  height: 100%;
+}
+
+.primary-bg {
+  background: rgb(3, 140, 191);
+  background: linear-gradient(90deg, rgb(3, 140, 191) 0%, rgb(1, 76, 164) 100%);
+}
+
+.btn-type2 {
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+}
+.btn-type2:hover {
+  background-color: #000000;
+  color: #ffffff;
 }/*# sourceMappingURL=custom.css.map */

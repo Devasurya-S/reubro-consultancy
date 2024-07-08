@@ -22,7 +22,7 @@ body {
 
 header .navbar-brand svg {
   width: auto;
-  height: 0px;
+  height: 50px;
   transition: 0.5s;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
@@ -30,14 +30,37 @@ header .navbar-brand svg {
   -o-transition: 0.5s;
 }
 
+header.homepage .navbar-brand svg {
+  width: auto;
+  height: 0;
+}
+
 .sticky-header header {
   background-color: #038CBF;
+  animation: headerBg 0.3s 1 ease-in;
+  -webkit-animation: headerBg 0.3s 1 ease-in;
 }
 .sticky-header header .navbar-brand svg {
   width: auto;
   height: 40px;
 }
 
+@keyframes headerBg {
+  from {
+    background-color: rgba(3, 140, 191, 0);
+  }
+  to {
+    background-color: rgb(3, 140, 191);
+  }
+}
+@keyframes headerBgRev {
+  from {
+    background-color: rgb(3, 140, 191);
+  }
+  to {
+    background-color: rgba(3, 140, 191, 0);
+  }
+}
 .hamburger {
   background-color: #038CBF;
 }
@@ -69,6 +92,32 @@ header .navbar-brand svg {
   background-color: #006489;
 }
 
+.exploreAllBtn {
+  color: white;
+  text-decoration: none;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.exploreAllBtn .fa-arrow-right {
+  margin-left: 10px;
+}
+.exploreAllBtn:hover {
+  color: #038CBF;
+}
+.exploreAllBtn:hover .fa-arrow-right {
+  margin-left: 15px;
+}
+
+.homeServicePill a {
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+}
+.homeServicePill a:hover {
+  background-color: #038CBF;
+  border-color: #038CBF;
+}
+
 .homeServiceContainer {
   background-color: #002B3C;
 }
@@ -85,6 +134,14 @@ header .navbar-brand svg {
 
 .homeServiceCard {
   color: black;
+}
+.homeServiceCard .homeServiceIcon {
+  height: 56px;
+}
+@media (min-width: 992px) {
+  .homeServiceCard p {
+    min-height: 90px;
+  }
 }
 
 .homeServiceBtn a {
@@ -113,7 +170,8 @@ header .navbar-brand svg {
 }
 
 @media (min-width: 668px) {
-  .homeCaseBody h4, .homeCaseBody p {
+  .homeCaseBody h4,
+  .homeCaseBody p {
     min-height: 95px;
   }
 }
@@ -226,8 +284,10 @@ header .navbar-brand svg {
 .homeContactSection .leedHolder {
   color: white;
   background-color: #038CBF;
-  width: -moz-fit-content;
-  width: fit-content;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .homeContactSection .leedHolder a {
   color: white;
