@@ -219,18 +219,36 @@
   }
 }
 
-.maintitlewrap {
-  width: 53%;
-  position: relative;
+.main-bannerbg {
+  height: 100%;
+}
+.main-bannerbg .bannerItem {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 48vmax;
+}
+@media (min-width: 1400px) {
+  .main-bannerbg .bannerItem {
+    height: 45vmax;
+  }
+}
+@media (max-width: 1199px) {
+  .main-bannerbg .bannerItem {
+    height: 60vmax;
+  }
 }
 @media (max-width: 991px) {
-  .maintitlewrap {
-    width: 85%;
+  .main-bannerbg .bannerItem {
+    height: 55vmax;
   }
+}
+
+.maintitlewrap {
+  position: relative;
 }
 @media (max-width: 767px) {
   .maintitlewrap {
-    width: 100%;
     display: flex;
     align-items: center;
   }

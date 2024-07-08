@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reubro Consultancy</title>
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Yesava One Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet" />
+    <!-- Poppins Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body id="stickyHeader">
+    <header class="position-fixed w-100 z-3">
+        <!-- <nav class="navbar fixed-top"> -->
+        <nav class="navbar">
+            <div class="container-fluid px-xxl-6 px-xl-5">
+                <a class="navbar-brand" href="index.html">
+                    <svg width="450" height="678" viewBox="0 0 450 678" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M445.798 216.49C437.526 102.11 347.271 10.4546 233.51 0V216.49H445.798Z" fill="white"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M448.086 677.937C439.815 563.557 349.56 471.901 235.799 461.447V677.937H448.086Z" fill="white"/>
+                        <rect y="232.516" width="215.195" height="210.665" fill="white"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M233.51 444.803C347.889 436.531 439.545 346.277 450 232.516L233.51 232.516L233.51 444.803Z" fill="white"/>
+                    </svg>
+                </a>
+                <button class="navbar-toggler border-0 hamburger rounded-0 px-2 transitionNormal shadow-none"
+                    type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon d-flex align-items-center justify-content-center">
+                        <svg class="hamSvg" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="18" height="2" fill="white" />
+                            <rect y="7" width="18" height="2" fill="white" />
+                            <rect y="14" width="18" height="2" fill="white" />
+                        </svg>
+                    </span>
+                </button>
+                <div class="offcanvas w-100 offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-body px-xxl-6 px-xl-5 pe-lg-5 px-3 py-4 py-lg-5">
+                        <button type="button" class="text-white fs-3 me-0 ms-auto closeBtn p-xxl-5 p-3 bg-transparent border-0 lh-1 position-absolute end-0 top-0" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+                        <div class="menu-container justify-content-sm-between">
+                            <a class="navbar-brand mb-sm-0 mb-4" href="index.html"><img src="images/logo-white.png" alt="Reubro Consultancy"
+                                class="img-fluid" /></a>
+                            <div class="menu-wrap d-flex flex-md-column flex-sm-row flex-column">
+                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Our Capabilities</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="case-studies.html">Case Studies</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Meet Our Expertise</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="all-services.html">Explore Services</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="about-us.html">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="contact-us.html">Get in Touch</a>
+                                    </li>
+                                </ul>
+                                <div class="other-links">
+                                    <hr class="border border-white d-md-block d-sm-none">
+                                    <div class="socila-links d-flex align-items-center">
+                                        <a href="link-type1" target="_blank" class="me-2"><i class="fa-brands fa-facebook-f"></i></a>
+                                        <a href="link-type1" target="_blank" class="me-2"><i class="fa-brands fa-x-twitter"></i></a>
+                                        <a href="link-type1" target="_blank" class="me-2"><i class="fa-brands fa-linkedin-in"></i></a>
+                                        <a href="link-type1" target="_blank" class="me-2"><i class="fa-brands fa-youtube"></i></a>
+                                        <a href="link-type1" target="_blank" class="me-2"><i class="fa-brands fa-instagram"></i></a>
+                                    </div>
+                                    <a href="" class="d-block small fw-semibold text-decoration-none text-white mb-4 link-type1">Subscribe to our Newsletter</a>
+                                    <div class="mb-4">
+                                        <p class="small fw-normal text-white mb-0">Contact us by sending us an email or alternatively calling our office on</p>
+                                        <a href="tel:+91 098470 39733" class="nav-link text-white small fw-semibold link-type1">+91 098470 39733</a>
+                                    </div>
+                                    <a href="mailto:enquiry@reubroconsultant.com" class="nav-link text-white small fw-semibold link-type1">enquiry@reubroconsultant.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Banner Section -->
+    <section class="banner-section innerBannerSection position-relative">
+        <picture class="mx-auto">
+            <source media="(min-width:1200px)" srcset="images/service-banner-large.jpg">
+            <source media="(min-width:768px)" srcset="images/service-banner-medium.jpg">
+            <img src="images/service-banner-small.jpg" class="w-100" alt="About Page Banner Image">
+        </picture>
+        <div class="banner-textwrap d-flex align-items-center pt-5">
+            <div class="container-lg">
+                <div class="col-lg-6 col-10">
+                    <h2 class="mb-0">Our Services</h2>
+                    <p>With a wide range of services based around business transformation,  learning innovation and digital experience, we combine elements to  create a custom solution for your organisation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--All Services Section -->
+    <section class="homeServiceContainer">
+        <div class="container-fluid px-xxl-6 px-xl-5 py-4 py-lg-5">
+            <div>
+                <h3 class="fs-2 fw-medium text-white mb-5">Explore our Capabilities</h3>
+                <div class="row g-xl-5 gy-4 g-3">
+                    <div class="col-lg-4">
+                        <div class="homeServiceCard d-flex flex-column gap-3 text-white">
+                            <div class="d-flex align-items-center gap-3">
+                                <img src="images/homeServiceIcon.svg" alt="icon for insights" class="homeServiceIcon">
+                                <h4>Insights</h4>
+                            </div>
+                            <p class="fs-6 mb-0">We provide a global antenna based on facts, not hype, to help improve returns on your IT and business investments.</p>
+                            <div class="d-flex flex-wrap gap-2 homeServicePill">
+                                <a href="#" class="rounded-pill transitionNormal py-2 px-3 small">Banking & financial markets</a>
+                                <a href="#" class="rounded-pill transitionNormal py-2 px-3 small">Central government</a>
+                                <a href="#" class="rounded-pill transitionNormal py-2 px-3 small">Health & care</a>
+                                <a href="#" class="rounded-pill transitionNormal py-2 px-3 small">Utilities</a>
+                                <a href="#" class="rounded-pill transitionNormal py-2 px-3 small">Defence & intelligence</a>
+                                <a href="#" class="rounded-pill transitionNormal py-2 px-3 small">Oil & Gas</a>
+                            </div>
+                            <a href="#" class="exploreAllBtn d-flex align-items-center"><span class="transitionNormal fs-6">Explore all industries</span><i class="fa-solid fa-arrow-right transitionNormal fs-5"></i> 
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="homeServiceCard d-flex flex-column gap-3 text-white">
+                            <div class="d-flex align-items-center gap-3">
+                                <img src="images/homeServiceIcon1.svg" alt="icon for services" class="homeServiceIcon">
+                                <h4 class="fs-4">Services</h4>
+                            </div>
+                            <p class="fs-6 mb-0">We help you meet the ever-evolving digital expectations of your  customers and citizens through our secure and flexible end-to-end  services.</p>
+                            <div class="d-flex flex-wrap gap-2 homeServicePill">
+                                <a href="#" class="rounded-pill transitionNormal py-2 px-3 small">Advisory services</a>
+                                <a href="#" class="rounded-pill transitionNormal py-2 px-3 small">Business consulting</a>
+                                <a href="#" class="rounded-pill transitionNormal py-2 px-3 small">Managed IT services</a>
+                                <a href="#" class="rounded-pill transitionNormal py-2 px-3 small">Agile digital services</a>
+                                <a href="#" class="rounded-pill transitionNormal py-2 px-3 small">Advanced analytics</a>
+                                <a href="#" class="rounded-pill transitionNormal py-2 px-3 small">Sustainability services</a>
+                            </div>
+                            <a href="#" class="exploreAllBtn d-flex align-items-center"><span class="transitionNormal fs-6">Explore all industries</span><i class="fa-solid fa-arrow-right transitionNormal fs-5"></i> 
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="homeServiceCard d-flex flex-column gap-3 text-white">
+                            <div class="d-flex align-items-center gap-3">
+                                <img src="images/homeServiceIcon2.svg" alt="icon for services" class="homeServiceIcon">
+                                <h4 class="fs-4">Solutions</h4>
+                            </div>
+                            <p class="fs-6 mb-0">Our intellectual property-based solutions help you accelerate innovation and drive operational excellence.</p>
+                            <div class="d-flex flex-wrap gap-2 homeServicePill">
+                                <a href="#" class="rounded-pill transitionNormal py-2 px-3 small">HR solutions</a>
+                                <a href="#" class="rounded-pill transitionNormal py-2 px-3 small">Staffing</a>
+                                <a href="#" class="rounded-pill transitionNormal py-2 px-3 small">IT Solutions</a>
+                                <a href="#" class="rounded-pill transitionNormal py-2 px-3 small">Government Solutions</a>
+                                <a href="#" class="rounded-pill transitionNormal py-2 px-3 small">Talent Development</a>
+                                <a href="#" class="rounded-pill transitionNormal py-2 px-3 small">Environment, Health and Safety</a>
+                            </div>
+                            <a href="#" class="exploreAllBtn d-flex align-items-center"><span class="transitionNormal fs-6">Explore all industries</span><i class="fa-solid fa-arrow-right transitionNormal fs-5"></i> 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Insights Section -->
+    <section class="serviceGrid">
+        <div class="container-lg py-4 py-lg-5">
+            <h3>Insights and perspectives</h3>
+            <p class="mb-4">We provide a global antenna based on facts, not hype, to help improve returns on your IT and business investments.</p>
+
+            <div class="row g-3">
+                <div class="col-md-6 col-lg-4">
+                    <div class="serviceCard p-xl-5 p-4">
+                        <h4 class="fs-4">Banking and Financial Markets</h4>
+                        <p class="mb-md-5 fs-6">We help our clients open up new market opportunities and stay ahead of  the competition, whether it’s through emerging technologies, modernising  payments systems, improving collections or protecting them from fraud  or security.</p>
+                        <a href="#" class="fs-6 transitionNormal">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="serviceCard p-xl-5 p-4">
+                        <h4 class="fs-4">Central government</h4>
+                        <p class="mb-md-5 fs-6">From the seabed to space, we are trusted by the UK Public Sector to do  complex things well. We deliver efficient citizen-centric services,  protect the vulnerable and help keep society safe.  We are proud of being a responsible business and are committed to a more  inclusive and sustainable world, for future generations.</p>
+                        <a href="#" class="fs-6 transitionNormal">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="serviceCard p-xl-5 p-4">
+                        <h4 class="fs-4">Health and Care</h4>
+                        <p class="mb-md-5 fs-6">Now more than ever, health and care  organisations need to improve outcomes for everyone, so that all can  access the right level of care, at the right time, from the right  people. We are here to help to do things differently using our global  expertise, innovation and local knowledge to redesign systems and  services to make things better. </p>
+                        <a href="#" class="fs-6 transitionNormal">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="serviceCard p-xl-5 p-4">
+                        <h4 class="fs-4">Utilities</h4>
+                        <p class="mb-md-5 fs-6">From expatriate management to relocation assistance, IRIS will assist  you in navigating the challenges posed by global mobility and  immigration.</p>
+                        <a href="#" class="fs-6 transitionNormal">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="serviceCard p-xl-5 p-4">
+                        <h4 class="fs-4">Defence & intelligence</h4>
+                        <p class="mb-md-5 fs-6">Manage mergers and acquisitions across the globe without a hitch. With expert advice from our in-country teams here at IRIS, we can help manage your global move.</p>
+                        <a href="#" class="fs-6 transitionNormal">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="serviceCard p-xl-5 p-4">
+                        <h4 class="fs-4">Oil and Gas</h4>
+                        <p class="mb-md-5 fs-6">Build a positive, engaging workplace culture that aligns with your organisation’s vision, values, and strategy – even through change.</p>
+                        <a href="#" class="fs-6 transitionNormal">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section -->
+    <section class="serviceGrid gridYellow">
+        <div class="container-lg py-4 py-lg-5">
+            <h3>Services</h3>
+            <p class="mb-4">We help you meet the ever-evolving digital expectations of your  customers and citizens through our secure and flexible end-to-end  services.</p>
+
+            <div class="row g-3">
+                <div class="col-md-6 col-lg-4">
+                    <div class="serviceCard p-xl-5 p-4">
+                        <h4 class="fs-4">Advisory Services</h4>
+                        <p class="mb-md-5 fs-6">Whatever your challenge, ambition or industry, we offer expert advice,  services and solutions that empower you to thrive in our ever-evolving  digital world.</p>
+                        <a href="#" class="fs-6 transitionNormal">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="serviceCard p-xl-5 p-4">
+                        <h4 class="fs-4">Business Consulting</h4>
+                        <p class="mb-md-5 fs-6">Organisations are facing constant  change, from increasing levels of disruption to changing human behaviour  and technological advancement across all industries.</p>
+                        <a href="#" class="fs-6 transitionNormal">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="serviceCard p-xl-5 p-4">
+                        <h4 class="fs-4">Managed IT services</h4>
+                        <p class="mb-md-5 fs-6">Our flexible partnership models accelerate digital transformation, helping you achieve your business objectives.</p>
+                        <a href="#" class="fs-6 transitionNormal">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="serviceCard p-xl-5 p-4">
+                        <h4 class="fs-4">Agile digital services</h4>
+                        <p class="mb-md-5 fs-6">From expatriate management to relocation assistance, IRIS will assist  you in navigating the challenges posed by global mobility and  immigration.</p>
+                        <a href="#" class="fs-6 transitionNormal">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="serviceCard p-xl-5 p-4">
+                        <h4 class="fs-4">Advanced analytics</h4>
+                        <p class="mb-md-5 fs-6">Manage mergers and acquisitions across the globe without a hitch. With expert advice from our in-country teams here at IRIS, we can help manage your global move.</p>
+                        <a href="#" class="fs-6 transitionNormal">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="serviceCard p-xl-5 p-4">
+                        <h4 class="fs-4">Sustainability Services</h4>
+                        <p class="mb-md-5 fs-6">Build a positive, engaging workplace culture that aligns with your organisation’s vision, values, and strategy – even through change.</p>
+                        <a href="#" class="fs-6 transitionNormal">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Solutions Section -->
+    <section class="serviceGrid gridRed">
+        <div class="container-lg py-4 py-lg-5">
+            <h3>Solutions</h3>
+            <p class="mb-4">Our intellectual property-based solutions help you accelerate innovation and drive operational excellence.</p>
+
+            <div class="row g-3">
+                <div class="col-md-6 col-lg-4">
+                    <div class="serviceCard p-xl-5 p-4">
+                        <h4 class="fs-4">HR Solutions</h4>
+                        <p class="mb-md-5 fs-6">Whatever your challenge, ambition or industry, we offer expert advice,  services and solutions that empower you to thrive in our ever-evolving  digital world.</p>
+                        <a href="#" class="fs-6 transitionNormal">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="serviceCard p-xl-5 p-4">
+                        <h4 class="fs-4">Staffing</h4>
+                        <p class="mb-md-5 fs-6">Organisations are facing constant  change, from increasing levels of disruption to changing human behaviour  and technological advancement across all industries</p>
+                        <a href="#" class="fs-6 transitionNormal">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="serviceCard p-xl-5 p-4">
+                        <h4 class="fs-4">IT solution</h4>
+                        <p class="mb-md-5 fs-6">Our flexible partnership models accelerate digital transformation, helping you achieve your business objectives.</p>
+                        <a href="#" class="fs-6 transitionNormal">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="serviceCard p-xl-5 p-4">
+                        <h4 class="fs-4">Government Solution</h4>
+                        <p class="mb-md-5 fs-6">From expatriate management to relocation assistance, IRIS will assist  you in navigating the challenges posed by global mobility and  immigration.</p>
+                        <a href="#" class="fs-6 transitionNormal">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="serviceCard p-xl-5 p-4">
+                        <h4 class="fs-4">Talent Development</h4>
+                        <p class="mb-md-5 fs-6">Manage mergers and acquisitions across the globe without a hitch. With expert advice from our in-country teams here at IRIS, we can help manage your global move.</p>
+                        <a href="#" class="fs-6 transitionNormal">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="serviceCard p-xl-5 p-4">
+                        <h4 class="fs-4">Environment, Health and Safety</h4>
+                        <p class="mb-md-5 fs-6">Build a positive, engaging workplace culture that aligns with your organisation’s vision, values, and strategy – even through change.</p>
+                        <a href="#" class="fs-6 transitionNormal">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Leeds Sections -->
+    <section class="homeContactSection py-5">
+        <div class="container-lg py-4 py-lg-5">
+            <div class="row">
+                <div class="col-lg-4 col-md-5 col-sm-7">
+                    <div class="leedHolder p-5">
+                        <h4 class="fs-4 fw-medium mb-4">Leeds</h4>
+                        <p class="fs-6 fw-medium mb-4">
+                            Near South Over Bridge <br />
+                            Valanjambalam<br />
+                            Kochi, Ernakulam<br />
+                            Kerala 682016
+                        </p>
+                        <a href="#" class="fs-6 fw-medium">Get Directions 
+                            <svg class="ms-2 transitionNormal" width="38" height="16" viewBox="0 0 38 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M37.7071 8.70711C38.0976 8.31658 38.0976 7.68342 37.7071 7.29289L31.3431 0.928932C30.9526 0.538408 30.3195 0.538408 29.9289 0.928932C29.5384 1.31946 29.5384 1.95262 29.9289 2.34315L35.5858 8L29.9289 13.6569C29.5384 14.0474 29.5384 14.6805 29.9289 15.0711C30.3195 15.4616 30.9526 15.4616 31.3431 15.0711L37.7071 8.70711ZM0 9H37V7H0V9Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container-fluid px-xxl-6 px-xl-5 py-4 py-lg-5">
+            <div class="row g-3 justify-content-between">
+                <div class="col-lg-4 col-md-5">
+                    <div class="d-flex align-items-end mb-5">
+                        <div class="footerLogo w-25 pe-3">
+                            <img src="images/logo-white.png" class="img-fluid" alt="">
+                        </div>
+                        <p class="text-white mb-0">Shaping industries through the power of better consulting.</p>
+                    </div>
+                    <div>
+                        <p class="text-white small mb-0">Contact us by sending us an email or alternatively calling our office on</p>
+                        <a href="tel:+91 098470 39733" class="nav-link text-white small fw-semibold link-type1">+91 098470 39733</a>
+                        <a href="mailto:enquiry@reubroconsultant.com" class="nav-link text-white small fw-semibold link-type1 mt-4">enquiry@reubroconsultant.com</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-5">
+                    <div class="row g-1">
+                        <div class="col-sm-6">
+                            <a href="" class="nav-link text-white text-decoration-underline link-type1 mb-2">Home</a>
+                            <a href="" class="nav-link text-white text-decoration-underline link-type1 mb-2">Our Capabilities</a>
+                            <a href="" class="nav-link text-white text-decoration-underline link-type1">Case Studies</a>
+                        </div>
+                        <div class="col-sm-6">
+                            <a href="" class="nav-link text-white text-decoration-underline link-type1 mb-2">Meet Our Expertise</a>
+                            <a href="" class="nav-link text-white text-decoration-underline link-type1 mb-2">News &amp; Insights</a>
+                            <a href="" class="nav-link text-white text-decoration-underline link-type1 mb-2">About</a>
+                            <a href="" class="nav-link text-white text-decoration-underline link-type1">Get in Touch</a>
+                        </div>
+                    </div>
+                    <hr class="border border-white">
+                    <a href="" class="d-block small fw-semibold text-decoration-none text-white mb-4 link-type1">Subscribe to our Newsletter</a>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="small text-white lh-1">Follow us</div>
+                        <div class="socila-links fs-4 d-flex align-items-center">
+                            <a href="" target="_blank" class="text-white link-type1 ms-3"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="" target="_blank" class="text-white link-type1 ms-3"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="" target="_blank" class="text-white link-type1 ms-3"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="" target="_blank" class="text-white link-type1 ms-3"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="" target="_blank" class="text-white link-type1 ms-3"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="d-flex text-white small fw-light flex-wrap">
+                        <span>Copyright 2024 &copy;. All right reserved</span> 
+                        <span class="mx-2">|</span>
+                        <a href="" class="nav-link link-type1">Cookie Settings</a>
+                        <span class="mx-2">|</span>
+                        <a href="" class="nav-link link-type1">Terms and Conditions</a>
+                        <span class="mx-2">|</span>
+                        <a href="" class="nav-link link-type1">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>

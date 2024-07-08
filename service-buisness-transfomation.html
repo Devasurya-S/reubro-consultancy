@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,17 +16,7 @@
     <!-- Poppins Font CDN -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet" />
-    <!-- Owl Carousel -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/custom.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -111,134 +100,179 @@
             </div>
         </nav>
     </header>
+    <!-- Banner Section -->
     <section class="banner-section innerBannerSection position-relative">
         <picture class="mx-auto">
-            <source media="(min-width:1200px)" srcset="images/about-banner-large.jpg">
-            <source media="(min-width:768px)" srcset="images/about-banner-medium.jpg">
-            <img src="images/about-banner-small.jpg" class="w-100" alt="About Page Banner Image">
+            <source media="(min-width:1200px)" srcset="images/service-banner-large.jpg">
+            <source media="(min-width:768px)" srcset="images/service-banner-medium.jpg">
+            <img src="images/service-banner-small.jpg" class="w-100" alt="About Page Banner Image">
         </picture>
         <div class="banner-textwrap d-flex align-items-center pt-5">
             <div class="container-lg">
                 <div class="col-lg-6 col-10">
-                    <h2 class="mb-0">Contact</h2>
-                    <p>Connect with Reubro Consultancy. Reach out for inquiries, feedback, partnerships, and let's engage in meaningful conversations.</p>
+                    <h2 class="mb-0">Business Transformation</h2>
+                    <p>Adaptable and outcomes-driven, our approach to transformation draws on deep technical and strategic experience.</p>
                 </div>
             </div>
         </div>
     </section>
-    <section class="py-xl-5 py-4">
+    <!-- Overview Section -->
+    <section class="overviewSection">
         <div class="container-lg">
-            <div class="row g-xl-5 g-lg-4 g-3 align-items-start">
-                <div class="col-lg-8">
-                    <form action="">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-floating mb-3">
-                                    <input type="text" class="form-control border-0 rounded-0 border-bottom shadow-none" id="firstName" placeholder="First Name">
-                                    <label for="firstName">First Name</label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-floating mb-3">
-                                    <input type="text" class="form-control border-0 rounded-0 border-bottom shadow-none" id="lastName" placeholder="Last Name">
-                                    <label for="lastName">Last Name</label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-floating mb-3">
-                                    <input type="email" class="form-control border-0 rounded-0 border-bottom shadow-none" id="email" placeholder="Email">
-                                    <label for="email">Email</label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-floating mb-3">
-                                    <input type="text" class="form-control border-0 rounded-0 border-bottom shadow-none" id="company" placeholder="Company">
-                                    <label for="company">Company</label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-floating mb-3">
-                                    <input type="text" class="form-control border-0 rounded-0 border-bottom shadow-none" id="jobTitle" placeholder="Job Title">
-                                    <label for="jobTitle">Job titile</label>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <button class="btn serviceSubBtn py-2 rounded-pill fs-6 px-5">Submit</button>
-                            </div>
-                        </div>
-                    </form>
-                    <!-- <form action="">
-                        <div class="row g-3">
-                            <div class="col-12">
-                                <label for="enqType" class="form-label small">Enquiry type<span>*</span></label>
-                                <input type="text" class="form-control bg-light shadow-none" placeholder="" required>
-                            </div>
-                            <div class="col-lg-6 col-12">
-                                <label for="firstName" class="form-label small">First name<span>*</span></label>
-                                <input type="text" class="form-control bg-light shadow-none" placeholder="" required>
-                            </div>
-                            <div class="col-lg-6 col-12">
-                                <label for="lastName" class="form-label small">Last name<span>*</span></label>
-                                <input type="text" class="form-control bg-light shadow-none" placeholder="" required>
-                            </div>
-                            <div class="col-12">
-                                <label for="emailID" class="form-label small">Email<span>*</span></label>
-                                <input type="email" class="form-control bg-light shadow-none" placeholder="" required>
-                            </div>
-                            <div class="col-12">
-                                <label for="CompanyName" class="form-label small">Company<span>*</span></label>
-                                <input type="text" class="form-control bg-light shadow-none" placeholder="" required>
-                            </div>
-                            <div class="col-12">
-                                <label for="jobTitle" class="form-label small">Job title<span>*</span></label>
-                                <input type="text" class="form-control bg-light shadow-none" placeholder="" required>
-                            </div>
-                            <div class="col-lg-6 col-12">
-                                <label for="countryName" class="form-label small">Country</label>
-                                <input type="text" class="form-control bg-light shadow-none" placeholder="">
-                            </div>
-                            <div class="col-lg-6 col-12">
-                                <label for="lastName" class="form-label small">Phone</label>
-                                <input type="number" class="form-control bg-light shadow-none" placeholder="">
-                            </div>
-                            <div class="col-12">
-                                <label for="jobTitle" class="form-label small">Message<span>*</span></label>
-                                <textarea name="" id="" class="form-control bg-light shadow-none" rows="4"></textarea>
-                            </div>
-                            <div class="col-12 mt-xl-5">
-                                <div class="form-check">
-                                    <input class="form-check-input shadow-none rounded-0 p-2" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                        Reubro consultancy will use the contact information you provide us to respond to your inquiry. By clicking the Submit button below, you agree to receive correspondence from CGI. For information on our commitment to protecting your privacy, please read our Privacy Policy. <span>*</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-12 mt-4">
-                                <input type="submit" value="Submit" class="btn btn-type1 rounded-pill px-xl-5 p-xl-3 px-3 p-2">
-                            </div>
-                        </div>
-                    </form> -->
+            <div class="row">
+                <div class="col-md-6 pt-4 pt-md-0">
+                    <div class="text-white d-flex flex-column justify-content-center h-100">
+                        <h3>Overview</h3>
+                        <p>
+                            Just as there’s no one pathway to business  transformation, there’s no single templated approach that can help you  achieve your goals.  
+                            That’s why our Business Transformation  offering is adaptable to your needs, drawing on our extensive strategic  and technical change-management experience. It can include everything  from process improvement and custom knowledge portals to change  management, human-centred design, learning and implementation support.  
+                            It’s a holistic approach that focuses on achieving the best outcome, however you get there.
+                        </p>
+                    </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="pe-lg-5">
-                        <h3 class="hd-type1">Our Global Network</h3>
-                        <p class="small">We have three global offices, and in the last  five years we've helped our clients in over 72 locations across The  Americas, Europe, New Zealand, Australia and Asia.</p>
-                        <address>
-                            <strong>Auckland, New Zealand</strong> <br>
-                            33 Karaka Street, Eden Terrace <br>
-                            Auckland, 1010 <br>
-                            New Zealand <br>
-                            <a href="tel:+64 9 520 6517" class="nav-link">+64 9 520 6517</a>
-                            <a href="">View on map</a>
-                        </address>
-                        <address>
-                            <strong>Wellington, New Zealand</strong> <br>
-                            Level 4, 26 The Terrace <br>
-                            Wellington, 6011 <br>
-                            New Zealand <br>
-                            <a href="tel:+64 4 801 6747" class="nav-link">+64 4 801 6747</a>
-                            <a href="">View on map</a>
-                        </address>
+                <div class="col-md-6 overviewImage">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section -->
+    <section class="serviceGrid">
+        <div class="container-lg py-4 py-lg-5">
+            <h3>Services</h3>
+            <p class="mb-4">With a wide range of services based around business transformation,  learning innovation and digital experience, we combine elements to  create a custom solution for your organisation.</p>
+
+            <div class="row g-3">
+                <div class="col-md-6 col-lg-4">
+                    <div class="serviceCard p-xl-5 p-4">
+                        <img src="./images/serviceIcon1.svg" alt="icon for buisness process" class="serviceIcon mb-3">
+                        <h4 class="fs-4">Business Process Design and Improvement</h4>
+                        <p class="mb-md-5 fs-6">Creating clear, efficient processes to help your business thrive.</p>
+                        <a href="#" class="fs-6 transitionNormal">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="serviceCard p-xl-5 p-4">
+                        <img src="./images/serviceIcon2.svg" alt="icon for buisness process" class="serviceIcon mb-3">
+                        <h4 class="fs-4">Technical Writing and Documentation</h4>
+                        <p class="mb-md-5 fs-6">We create clear, eff
+                            ective documentation for your people</p>
+                        <a href="#" class="fs-6 transitionNormal">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="serviceCard p-xl-5 p-4">
+                        <img src="./images/serviceIcon3.svg" alt="icon for buisness process" class="serviceIcon mb-3">
+                        <h4 class="fs-4">Change Management</h4>
+                        <p class="mb-md-5 fs-6">Working with you and your people to plan, implement, and embed organisational change.</p>
+                        <a href="#" class="fs-6 transitionNormal">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="serviceCard p-xl-5 p-4">
+                        <img src="./images/serviceIcon4.svg" alt="icon for buisness process" class="serviceIcon mb-3">
+                        <h4 class="fs-4">Information Architecture</h4>
+                        <p class="mb-md-5 fs-6">Making sure the right people have the right access to the right information at the right time.</p>
+                        <a href="#" class="fs-6 transitionNormal">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="serviceCard p-xl-5 p-4">
+                        <img src="./images/serviceIcon5.svg" alt="icon for buisness process" class="serviceIcon mb-3">
+                        <h4 class="fs-4">Organisation Design</h4>
+                        <p class="mb-md-5 fs-6">Build a foundation for business success – starting with your internal structure.</p>
+                        <a href="#" class="fs-6 transitionNormal">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="serviceCard p-xl-5 p-4">
+                        <img src="./images/serviceIcon6.svg" alt="icon for buisness process" class="serviceIcon mb-3">
+                        <h4 class="fs-4">Project and Programme Management</h4>
+                        <p class="mb-md-5 fs-6">Deliver complex projects and change programmes on time and in scope with our tailored management support.</p>
+                        <a href="#" class="fs-6 transitionNormal">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="serviceCard p-xl-5 p-4">
+                        <img src="./images/serviceIcon7.svg" alt="icon for buisness process" class="serviceIcon mb-3">
+                        <h4 class="fs-4">Culture Change</h4>
+                        <p class="mb-md-5 fs-6">Build a positive, engaging workplace culture that aligns with your organisation’s vision, values, and strategy – even through change.</p>
+                        <a href="#" class="fs-6 transitionNormal">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="serviceCard p-xl-5 p-4">
+                        <img src="./images/serviceIcon8.svg" alt="icon for buisness process" class="serviceIcon mb-3">
+                        <h4 class="fs-4">Operating Model Design</h4>
+                        <p class="mb-md-5 fs-6">Getting the most out of the resources available to you. </p>
+                        <a href="#" class="fs-6 transitionNormal">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- More Information Section -->
+    <section class="moreInfoSection">
+        <div class="container-lg py-4 py-lg-5">
+            <div class="row g-xl-5 g-3 flex-column-reverse flex-lg-row">
+                <div class="col-lg-6 text-white">
+                    <div class="d-flex flex-column justify-content-center h-100">
+                        <h3 class="fs-3 mb-3">Combining Our Services For the Best Result</h3>
+                        <p class="fs-6 fw-regular">Our customers know that using a mix of our services gets the best  outcome without necessarily involving more cost. Sometimes the job needs  a bit of one speciality, supported by a light touch of others, so talk  to us about the job ahead and we'll bring the right services, at the  right time.</p>
+                        <div class="moreBtnContainer d-flex gap-3">
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="py-2 px-3 btn rounded-pill transitionNormal fs-6 fw-regular">Digital Experience</a>
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="py-2 px-3 btn rounded-pill transitionNormal fs-6 fw-regular">Learning Innovation</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 moreInfoBg"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section>
+        <div class="container-lg py-4 py-lg-5">
+            <div class="row justify-content-center">
+                <div class="col-xl-8 col-lg-10">
+                    <div class="shadow p-md-5 p-4">
+                        <h3 class="mb-4 fs-2">Let’s talk about your next project. How can we help?</h3>
+                        <form action="">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control border-0 rounded-0 border-bottom shadow-none" id="firstName" placeholder="First Name">
+                                        <label for="firstName">First Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control border-0 rounded-0 border-bottom shadow-none" id="lastName" placeholder="Last Name">
+                                        <label for="lastName">Last Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="email" class="form-control border-0 rounded-0 border-bottom shadow-none" id="email" placeholder="Email">
+                                        <label for="email">Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control border-0 rounded-0 border-bottom shadow-none" id="company" placeholder="Company">
+                                        <label for="company">Company</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control border-0 rounded-0 border-bottom shadow-none" id="jobTitle" placeholder="Job Title">
+                                        <label for="jobTitle">Job titile</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <button class="btn serviceSubBtn py-2 rounded-pill fs-6 px-5">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                        <p class="fs-6 fw-light mt-4">This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
                     </div>
                 </div>
             </div>
@@ -330,38 +364,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <!-- Owl Carousel -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js" integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/common.js"></script>
-    <script>
-        $(document).ready(function () {
-            $(".owl-carousel").owlCarousel({
-                loop: true,
-                margin: 10,
-                nav: true,
-                responsive: {
-                    0: {
-                        items: 1,
-                    },
-                    574: {
-                        items: 2,
-                    },
-                    768: {
-                        items: 3,
-                    },
-                    992: {
-                        items: 4,
-                    },
-                    1200: {
-                        items: 5,
-                    },
-                },
-            });
-        });
-    </script>
 </body>
 
 </html>

@@ -16,6 +16,14 @@ body {
     padding-right: 10rem !important;
   }
 }
+.transitionNormal {
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+}
+
 .navLogo {
   width: 40px;
 }
@@ -165,8 +173,31 @@ header.homepage .navbar-brand svg {
   aspect-ratio: 1/1;
 }
 
+.caseBtnHolder {
+  position: absolute;
+}
+
+.seeMoreCaseBtn {
+  background-color: black;
+  color: white;
+}
+.seeMoreCaseBtn:hover {
+  background-color: #038CBF;
+  color: white;
+}
+
 .homeCaseCard {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.greyHr {
+  border-color: #818181;
+  opacity: 1;
+}
+
+.backHr {
+  opacity: 1;
+  border-color: #000000;
 }
 
 @media (min-width: 668px) {
@@ -407,14 +438,6 @@ header.homepage .navbar-brand svg {
   color: white;
 }
 
-.transitionNormal {
-  transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -ms-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-}
-
 .ourServiceBanner {
   background-repeat: no-repeat;
   background-position: center;
@@ -495,4 +518,22 @@ header.homepage .navbar-brand svg {
 .serviceSubBtn:hover {
   background-color: #025c7e;
   color: white;
+}
+
+.bgColor {
+  background-color: #0F2032;
+}
+
+.gridYellow {
+  background-color: #FFF7E8;
+}
+.gridYellow .serviceCard {
+  border-color: #FEA916;
+}
+
+.gridRed {
+  background-color: #FFEDED;
+}
+.gridRed .serviceCard {
+  border-color: #FE4A49;
 }/*# sourceMappingURL=style.css.map */

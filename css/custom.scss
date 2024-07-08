@@ -230,16 +230,32 @@
         max-width: 45vw;
     }
 }
-
-.maintitlewrap {
-    width: 53%;
-
-    @media (max-width:991px) {
-        width: 85%;
+.main-bannerbg{
+    height: 100%;
+    .bannerItem{
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 48vmax;
+        @media (min-width:1400px) {
+            height: 45vmax;
+        }
+        @media (max-width:1199px) {
+            height: 60vmax;
+        }
+        @media (max-width:991px) {
+            height: 55vmax;
+        }
     }
+}
+.maintitlewrap {
+    // width: 53%;
 
+    // @media (max-width:991px) {
+    //     width: 85%;
+    // }
     @media (max-width:767px) {
-        width: 100%;
+        // width: 100%;
         display: flex;
         align-items: center;
         // justify-content: space-between;

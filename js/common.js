@@ -7,3 +7,16 @@ function scrollFunction() {
         document.getElementById("stickyHeader").className = "";
     }
 }
+$(document).ready(function(){
+    $('.main-bannerbg').owlCarousel({
+        loop:true,
+        margin:5,
+        nav:false,
+        dots:false,
+        autoplay: true,
+        autoPlayTimeout: 500,
+        autoplaySpeed: 5500,
+        animateOut: 'fadeOut',
+        items:1
+    })
+})

@@ -86,3 +86,21 @@
         color: white;
     }
 }
+
+.bgColor {
+ background-color: #0F2032;
+}
+
+.gridYellow {
+    background-color: #FFF7E8;
+    .serviceCard {
+        border-color: #FEA916;
+    }
+}
+
+.gridRed {
+    background-color: #FFEDED;
+    .serviceCard {
+        border-color: #FE4A49;
+    }
+}
