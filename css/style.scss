@@ -1,3 +1,5 @@
+@import 'variables';
+
 body {
     margin: 0;
     padding: 0;
@@ -19,7 +21,6 @@ body {
     }
 }
 
-@import 'variables';
 @import 'index';
 @import 'detailed-service';
 

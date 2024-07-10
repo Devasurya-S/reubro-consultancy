@@ -484,3 +484,40 @@ header {
         color: white;
     }
 }
+
+.fontColorBlue {
+    color: #038CBF;
+}
+
+.accentBackground {
+    background-color: #038CBF;
+    height: 250px;
+    @media (max-width: 991px) {
+        display: none;
+    }
+}
+
+.homeContactControl{
+    @media (min-width: 991px) {
+        margin-top: -215px;
+    }
+}
+
+.contactUsImg {
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.heightControlContact {
+    height: 80%;
+    @media (max-width: 1023) {
+        height: auto;
+    }
+}
+
+.homeContactText {
+    color: white;
+    @media (max-width: 1023px) {
+        color: black;
+    }
+}

@@ -16,14 +16,6 @@ body {
     padding-right: 10rem !important;
   }
 }
-.transitionNormal {
-  transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -ms-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-}
-
 .navLogo {
   width: 40px;
 }
@@ -438,6 +430,50 @@ header.homepage .navbar-brand svg {
   color: white;
 }
 
+.fontColorBlue {
+  color: #038CBF;
+}
+
+.accentBackground {
+  background-color: #038CBF;
+  height: 250px;
+}
+@media (max-width: 991px) {
+  .accentBackground {
+    display: none;
+  }
+}
+
+@media (min-width: 991px) {
+  .homeContactControl {
+    margin-top: -215px;
+  }
+}
+
+.contactUsImg {
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+
+.heightControlContact {
+  height: 80%;
+}
+@media (max-width: 1023) {
+  .heightControlContact {
+    height: auto;
+  }
+}
+
+.homeContactText {
+  color: white;
+}
+@media (max-width: 1023px) {
+  .homeContactText {
+    color: black;
+  }
+}
+
 .ourServiceBanner {
   background-repeat: no-repeat;
   background-position: center;
@@ -536,4 +572,12 @@ header.homepage .navbar-brand svg {
 }
 .gridRed .serviceCard {
   border-color: #FE4A49;
+}
+
+.transitionNormal {
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
 }/*# sourceMappingURL=style.css.map */
