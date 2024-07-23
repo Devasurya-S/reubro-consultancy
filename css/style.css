@@ -1,7 +1,11 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif !important;
 }
 
 @media (min-width: 1400px) {
@@ -16,6 +20,14 @@ body {
     padding-right: 10rem !important;
   }
 }
+.transitionNormal {
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+}
+
 .navLogo {
   width: 40px;
 }
@@ -36,7 +48,7 @@ header.homepage .navbar-brand svg {
 }
 
 .sticky-header header {
-  background-color: #038CBF;
+  background-color: #2397C8;
   animation: headerBg 0.3s 1 ease-in;
   -webkit-animation: headerBg 0.3s 1 ease-in;
 }
@@ -62,7 +74,7 @@ header.homepage .navbar-brand svg {
   }
 }
 .hamburger {
-  background-color: #038CBF;
+  background-color: #2397C8;
 }
 .hamburger .navbar-toggler-icon {
   background-image: none;
@@ -71,25 +83,25 @@ header.homepage .navbar-brand svg {
   width: 18px;
 }
 .hamburger:hover {
-  background-color: #0063d8;
+  background-color: #084C69;
 }
 
 .infoSection p {
   color: #9E9B9B;
 }
 .infoSection .infoBtn {
-  background-color: #002B3B;
+  background-color: #084C69;
   color: white;
   width: 150px;
 }
 .infoSection .infoBtn.infoBtnChange {
-  background-color: #038CBF;
+  background-color: #2397C8;
 }
 .infoSection .infoBtn.infoBtnChange:hover {
-  background-color: #026387;
+  background-color: #084C69;
 }
 .infoSection .infoBtn:hover {
-  background-color: #006489;
+  background-color: #2397C8;
 }
 
 .exploreAllBtn {
@@ -102,7 +114,7 @@ header.homepage .navbar-brand svg {
   margin-left: 10px;
 }
 .exploreAllBtn:hover {
-  color: #038CBF;
+  color: #2397C8;
 }
 .exploreAllBtn:hover .fa-arrow-right {
   margin-left: 15px;
@@ -114,12 +126,12 @@ header.homepage .navbar-brand svg {
   border: 1px solid white;
 }
 .homeServicePill a:hover {
-  background-color: #038CBF;
-  border-color: #038CBF;
+  background-color: #2397C8;
+  border-color: #2397C8;
 }
 
 .homeServiceContainer {
-  background-color: #002B3C;
+  background-color: #084C69;
 }
 .homeServiceContainer .homeServiceInnerContainer {
   color: white;
@@ -151,7 +163,7 @@ header.homepage .navbar-brand svg {
   min-width: fit-content;
 }
 .homeServiceBtn a:hover {
-  color: #002B3C;
+  color: #084C69;
   border: 1px solid white;
   background-color: white;
 }
@@ -173,9 +185,9 @@ header.homepage .navbar-brand svg {
   background-color: black;
   color: white;
 }
-.seeMoreCaseBtn:hover {
-  background-color: #038CBF;
-  color: white;
+.seeMoreCaseBtn:hover, .seeMoreCaseBtn:active, .seeMoreCaseBtn:focus {
+  background-color: #2397C8 !important;
+  color: white !important;
 }
 
 .homeCaseCard {
@@ -233,12 +245,12 @@ header.homepage .navbar-brand svg {
   background-color: #39A09A;
 }
 .homeCaseBody a {
-  border: 1px solid black;
-  color: #001831;
+  border: 1px solid #196A8C;
+  color: #196A8C;
 }
 .homeCaseBody a:hover {
-  border: 1px solid #001831;
-  background-color: #001831;
+  border: 1px solid #248ED8;
+  background-color: #248ED8;
   color: white;
 }
 
@@ -261,19 +273,19 @@ header.homepage .navbar-brand svg {
   z-index: -1;
 }
 .homeAbout .learnMoreBtn {
-  background-color: #0075FF;
+  background-color: #2397C8;
   max-width: -moz-fit-content;
   max-width: fit-content;
 }
 .homeAbout .learnMoreBtn:hover {
-  background-color: #1a83ff;
+  background-color: #1e75b4;
 }
 
 .homeExpertCard .homeExpertCardHead {
   overflow: hidden;
   position: relative;
 }
-.homeExpertCard .homeExpertCardHead img {
+.homeExpertCard .homeExpertCardHead > img {
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
@@ -288,14 +300,14 @@ header.homepage .navbar-brand svg {
   right: 0;
 }
 .homeExpertCard .homeExpertCardHead .homeExpertIcon a {
-  background-color: #038CBF;
+  background-color: #2397C8;
 }
 .homeExpertCard .homeExpertCardHead .homeExpertIcon a img {
   max-width: 40px;
   max-height: 40px;
 }
 .homeExpertCard .homeExpertCardHead .homeExpertIcon a:hover {
-  background-color: #026387;
+  background-color: #084C69;
 }
 
 .homeContactSection {
@@ -306,7 +318,7 @@ header.homepage .navbar-brand svg {
 }
 .homeContactSection .leedHolder {
   color: white;
-  background-color: #038CBF;
+  background-color: #2397C8;
   height: 350px;
   display: flex;
   flex-direction: column;
@@ -392,11 +404,11 @@ header.homepage .navbar-brand svg {
 }
 
 .homeSubmit {
-  background-color: #038CBF;
+  background-color: #2397C8;
   color: white;
 }
 .homeSubmit:hover {
-  background-color: #002B3B;
+  background-color: #084C69;
   color: white;
 }
 .homeSubmit:hover svg {
@@ -407,7 +419,7 @@ header.homepage .navbar-brand svg {
   -o-transform: translateX(10px);
 }
 .homeSubmit:hover svg path {
-  fill: #002B3B;
+  fill: #084C69;
 }
 
 .contactImg {
@@ -418,24 +430,24 @@ header.homepage .navbar-brand svg {
 }
 
 .readyToSpeak div p span {
-  color: #038CBF;
+  color: #2397C8;
 }
 
 .callUsBtn {
-  border: 1px solid #038CBF;
-  color: #038CBF;
+  border: 1px solid #2397C8;
+  color: #2397C8;
 }
 .callUsBtn:hover {
-  background-color: #038CBF;
+  background-color: #2397C8;
   color: white;
 }
 
 .fontColorBlue {
-  color: #038CBF;
+  color: #2397C8;
 }
 
 .accentBackground {
-  background-color: #038CBF;
+  background-color: #2397C8;
   height: 250px;
 }
 @media (max-width: 991px) {
@@ -483,7 +495,7 @@ header.homepage .navbar-brand svg {
   min-height: 500px;
 }
 .ourServiceBanner .serviceBannerText h3 {
-  font-family: "Yeseva One", serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .overviewSection {
@@ -498,7 +510,7 @@ header.homepage .navbar-brand svg {
 }
 
 .serviceGrid {
-  background-color: #EBF0F3;
+  background-color: #F6F6F6;
 }
 .serviceGrid .serviceCard {
   border-top: 4px solid #019EDA;
@@ -529,7 +541,7 @@ header.homepage .navbar-brand svg {
   background-color: #0F2032;
 }
 .moreInfoSection h3 {
-  font-family: "Yeseva One", serif;
+  font-family: "Montserrat", sans-serif;
 }
 .moreInfoSection .moreBtnContainer a {
   background-color: #038CBF;
@@ -561,23 +573,8 @@ header.homepage .navbar-brand svg {
 }
 
 .gridYellow {
-  background-color: #FFF7E8;
+  background-color: #196A8C;
 }
-.gridYellow .serviceCard {
-  border-color: #FEA916;
-}
-
-.gridRed {
-  background-color: #FFEDED;
-}
-.gridRed .serviceCard {
-  border-color: #FE4A49;
-}
-
-.transitionNormal {
-  transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -ms-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
+.gridYellow .textColor {
+  color: white;
 }/*# sourceMappingURL=style.css.map */

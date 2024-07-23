@@ -185,9 +185,9 @@ header {
 .seeMoreCaseBtn {
     background-color: black;
     color: white;
-    &:hover {
-        background-color: $btnColor2;
-        color: white;
+    &:hover, &:active, &:focus {
+        background-color: $btnColor2 !important;
+        color: white !important;
     }
 
 }
@@ -254,12 +254,12 @@ header {
     }
 
     a {
-        border: 1px solid black;
-        color: #001831;
+        border: 1px solid #196A8C;
+        color: #196A8C;
 
         &:hover {
-            border: 1px solid #001831;
-            background-color: #001831;
+            border: 1px solid #248ED8;
+            background-color: #248ED8;
             color: white;
         }
     }
@@ -285,11 +285,11 @@ header {
     }
 
     .learnMoreBtn {
-        background-color: #0075FF;
+        background-color: #2397C8;
         max-width: fit-content;
 
         &:hover {
-            background-color: #1a83ff;
+            background-color: #1e75b4;
         }
     }
 }
@@ -299,7 +299,7 @@ header {
         overflow: hidden;
         position: relative;
 
-        img {
+        & > img {
             object-fit: cover;
             object-position: center;
             min-height: 100%;
@@ -336,7 +336,7 @@ header {
 
     .leedHolder {
         color: white;
-        background-color: #038CBF;
+        background-color: #2397C8;
         height: 350px;
         display: flex;
         flex-direction: column;
@@ -442,7 +442,7 @@ header {
 }
 
 .homeSubmit {
-    background-color: #038CBF;
+    background-color: #2397C8;
     color: white;
 
     &:hover {
@@ -471,26 +471,26 @@ header {
 
 .readyToSpeak {
     div p span {
-        color: #038CBF;
+        color: #2397C8;
     }
 }
 
 .callUsBtn {
-    border: 1px solid #038CBF;
-    color: #038CBF;
+    border: 1px solid #2397C8;
+    color: #2397C8;
 
     &:hover {
-        background-color: #038CBF;
+        background-color: #2397C8;
         color: white;
     }
 }
 
 .fontColorBlue {
-    color: #038CBF;
+    color: #2397C8;
 }
 
 .accentBackground {
-    background-color: #038CBF;
+    background-color: #2397C8;
     height: 250px;
     @media (max-width: 991px) {
         display: none;

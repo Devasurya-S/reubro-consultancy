@@ -1,5 +1,5 @@
 .offcanvas {
-    background-color: #038CBF;
+    background-color: #2397C8;
     height: 100vh;
     // overflow: hidden;
 
@@ -29,7 +29,7 @@
 
         .navbar-nav {
             .nav-link {
-                font-family: "Yeseva One", serif;
+                font-family: "Montserrat", sans-serif !important;
                 font-size: 2rem;
                 line-height: 1;
                 color: #ffffff;
@@ -179,7 +179,7 @@
 }
 
 .banner-section {
-    background-color: #E5E5E5;
+    background-color: #2397C8;
 
     .display-3 {
         @media (max-width:1499px) {
@@ -262,7 +262,7 @@
     }
 
     h1 {
-        font-family: "Yeseva One", serif;
+        font-family: "Montserrat", sans-serif !important;
         line-height: 1;
         // font-size: 75px;
         position: relative;
@@ -414,7 +414,7 @@
 }
 
 footer {
-    background-color: #038CBF;
+    background-color: #2397C8;
 
     .footerLogo {
         @media (max-width:767px) {
@@ -434,7 +434,7 @@ footer {
 
 /**********************Video End**************************/
 .hd-type1 {
-    font-family: "Yeseva One", serif;
+    font-family: "Montserrat", sans-serif !important;
 }
 
 .innerBannerSection {
@@ -460,7 +460,7 @@ footer {
     z-index: 2;
 
     h2 {
-        font-family: "Yeseva One", serif;
+        font-family: "Montserrat", sans-serif !important;
     }
 }
 

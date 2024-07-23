@@ -22,7 +22,7 @@
 }
 
 .serviceGrid{
-    background-color: #EBF0F3;
+    background-color: #F6F6F6;
     .serviceCard {
         border-top: 4px solid #019EDA;
         background-color: #ffffff;
@@ -92,15 +92,10 @@
 }
 
 .gridYellow {
-    background-color: #FFF7E8;
-    .serviceCard {
-        border-color: #FEA916;
+    background-color: #196A8C;
+    .textColor {
+        color: white;
     }
+
 }
 
-.gridRed {
-    background-color: #FFEDED;
-    .serviceCard {
-        border-color: #FE4A49;
-    }
-}
