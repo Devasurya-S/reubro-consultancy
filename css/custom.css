@@ -69,7 +69,7 @@
 }
 .offcanvas .offcanvas-body::before {
   content: "";
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.1);
   position: absolute;
   width: 46vmax;
   aspect-ratio: 1/1;
@@ -90,7 +90,7 @@
 }
 .offcanvas .offcanvas-body::after {
   content: "";
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.1);
   position: absolute;
   width: 26vmax;
   aspect-ratio: 1/1;
@@ -266,7 +266,7 @@
 }
 .maintitlewrap::before {
   content: "";
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.1);
   position: absolute;
   width: 46vmax;
   aspect-ratio: 1/1;
@@ -287,7 +287,7 @@
 }
 .maintitlewrap::after {
   content: "";
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.1);
   position: absolute;
   width: 26vmax;
   aspect-ratio: 1/1;
@@ -427,11 +427,11 @@ footer {
 }
 
 .btn-type1 {
-  background-color: #038CBF;
+  background-color: #2397C8;
   color: #ffffff;
 }
 .btn-type1:hover {
-  background-color: #014e69;
+  background-color: #084C69;
   color: #ffffff;
 }
 
@@ -486,8 +486,8 @@ footer {
 }
 
 .primary-bg {
-  background: rgb(3, 140, 191);
-  background: linear-gradient(90deg, rgb(3, 140, 191) 0%, rgb(1, 76, 164) 100%);
+  background: rgb(3, 151, 200);
+  background: linear-gradient(90deg, rgb(3, 151, 200) 0%, rgb(8, 76, 105) 100%);
 }
 
 .btn-type2 {

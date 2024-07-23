@@ -499,7 +499,7 @@ header.homepage .navbar-brand svg {
 }
 
 .overviewSection {
-  background-color: #002B3B;
+  background-color: #2397C8;
 }
 .overviewSection .overviewImage {
   background-image: url("../images/serviceOverview.png");
@@ -538,18 +538,18 @@ header.homepage .navbar-brand svg {
 }
 
 .moreInfoSection {
-  background-color: #0F2032;
+  background-color: #084C69;
 }
 .moreInfoSection h3 {
   font-family: "Montserrat", sans-serif;
 }
 .moreInfoSection .moreBtnContainer a {
-  background-color: #038CBF;
+  background-color: #2397C8;
   color: white;
 }
 .moreInfoSection .moreBtnContainer a:hover {
   background-color: white;
-  color: #038CBF;
+  color: #2397C8;
 }
 .moreInfoSection .moreInfoBg {
   background-image: url("../images/moreInformationBackground.png");
@@ -560,16 +560,16 @@ header.homepage .navbar-brand svg {
 }
 
 .serviceSubBtn {
-  background-color: #038CBF;
+  background-color: #2397C8;
   color: white;
 }
 .serviceSubBtn:hover {
-  background-color: #025c7e;
+  background-color: #084C69;
   color: white;
 }
 
 .bgColor {
-  background-color: #0F2032;
+  background-color: #084C69;
 }
 
 .gridYellow {

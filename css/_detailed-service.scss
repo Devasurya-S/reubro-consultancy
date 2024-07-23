@@ -11,7 +11,7 @@
 }
 
 .overviewSection {
-    background-color: #002B3B;
+    background-color: #2397C8;
     .overviewImage {
         background-image: url('../images/serviceOverview.png');
         background-repeat: no-repeat;
@@ -53,17 +53,17 @@
 }
 
 .moreInfoSection {
-    background-color: #0F2032;
+    background-color: #084C69;
     h3 {
         font-family: $yesavaOne;
     }
     .moreBtnContainer { 
         a {
-            background-color: #038CBF;
+            background-color: #2397C8;
             color: white;
             &:hover {
                 background-color: white;
-                color: #038CBF;
+                color: #2397C8;
             }
         }
     }
@@ -79,16 +79,16 @@
 }
 
 .serviceSubBtn{
-    background-color: #038CBF;
+    background-color: #2397C8;
     color: white;
     &:hover {
-        background-color: #025c7e;
+        background-color: #084C69;
         color: white;
     }
 }
 
 .bgColor {
- background-color: #0F2032;
+ background-color: #084C69;
 }
 
 .gridYellow {

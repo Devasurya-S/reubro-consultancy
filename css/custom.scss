@@ -80,7 +80,7 @@
 
         &::before {
             content: "";
-            background-color: rgba($color: #ffffff, $alpha: 0.25);
+            background-color: rgba($color: #ffffff, $alpha: 0.10);
             position: absolute;
             width: 46vmax;
             aspect-ratio: 1/1;
@@ -102,7 +102,7 @@
 
         &::after {
             content: "";
-            background-color: rgba($color: #ffffff, $alpha: 0.25);
+            background-color: rgba($color: #ffffff, $alpha: 0.10);
             position: absolute;
             width: 26vmax;
             aspect-ratio: 1/1;
@@ -280,7 +280,7 @@
     // overflow: hidden;
     &::before {
         content: "";
-        background-color: rgba($color: #ffffff, $alpha: 0.25);
+        background-color: rgba($color: #ffffff, $alpha: 0.10);
         position: absolute;
         width: 46vmax;
         aspect-ratio: 1/1;
@@ -302,7 +302,7 @@
 
     &::after {
         content: "";
-        background-color: rgba($color: #ffffff, $alpha: 0.25);
+        background-color: rgba($color: #ffffff, $alpha: 0.10);
         position: absolute;
         width: 26vmax;
         aspect-ratio: 1/1;
@@ -465,11 +465,11 @@ footer {
 }
 
 .btn-type1 {
-    background-color: #038CBF;
+    background-color: #2397C8;
     color: #ffffff;
 
     &:hover {
-        background-color: #014e69;
+        background-color: #084C69;
         color: #ffffff;
     }
 }
@@ -529,8 +529,10 @@ footer {
 }
 
 .primary-bg {
-    background: rgb(3, 140, 191);
-    background: linear-gradient(90deg, rgba(3, 140, 191, 1) 0%, rgba(1, 76, 164, 1) 100%);
+    // background: rgb(3, 140, 191);
+    // background: linear-gradient(90deg, rgba(3, 140, 191, 1) 0%, rgba(1, 76, 164, 1) 100%);
+    background: rgb(3, 151, 200);
+    background: linear-gradient(90deg, rgba(3, 151, 200, 1) 0%, rgba(8, 76, 105, 1) 100%);
 }
 
 .btn-type2 {
